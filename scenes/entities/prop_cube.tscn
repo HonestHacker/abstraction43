@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://dm2gj6i6oxf1i"]
+
+[ext_resource type="PackedScene" uid="uid://db55ay8gqkxkd" path="res://models/cube/cube.glb" id="1_ngly4"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_sgk0h"]
+absorbent = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dav58"]
+
+[node name="Cube" type="RigidBody3D"]
+physics_material_override = SubResource("PhysicsMaterial_sgk0h")
+
+[node name="cube" parent="." instance=ExtResource("1_ngly4")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_dav58")

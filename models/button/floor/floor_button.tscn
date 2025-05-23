@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://jq5i5d1xfiew"]
+
+[ext_resource type="PackedScene" uid="uid://c0ihfw1mgtk00" path="res://models/button/floor/floor_button.glb" id="1_2w35e"]
+
+[node name="floor_button" instance=ExtResource("1_2w35e")]

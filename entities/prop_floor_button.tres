@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="FuncGodotFGDModelPointClass" load_steps=4 format=3 uid="uid://bcaa2voem48wj"]
+
+[ext_resource type="PackedScene" uid="uid://deyx1obdd2en3" path="res://scenes/entities/prop_floor_button.tscn" id="1_78l4c"]
+[ext_resource type="Resource" uid="uid://dnjwu7nudj2iu" path="res://entities/base/io.tres" id="1_hr84u"]
+[ext_resource type="Script" uid="uid://dxdfb8rtps08f" path="res://addons/func_godot/src/fgd/func_godot_fgd_model_point_class.gd" id="1_vjnpx"]
+
+[resource]
+script = ExtResource("1_vjnpx")
+target_map_editor = 0
+models_sub_folder = ""
+scale_expression = ""
+generate_size_property = false
+generate_gd_ignore_file = false
+scene_file = ExtResource("1_78l4c")
+apply_rotation_on_map_build = true
+classname = "prop_floor_button"
+description = "The floor button."
+func_godot_internal = false
+base_classes = Array[Resource]([ExtResource("1_hr84u")])
+class_properties = {}
+class_property_descriptions = {}
+meta_properties = {
+"color": Color(0.8, 0.8, 0.8, 1),
+"size": AABB(-16, -16, -4, 16, 16, 4),
+"studio": "\"tb/models/prop_floor_button.glb\""
+}
+node_class = "Node3D"
+name_property = ""

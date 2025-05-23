@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="FuncGodotFGDBaseClass" load_steps=2 format=3 uid="uid://dnjwu7nudj2iu"]
+
+[ext_resource type="Script" uid="uid://bnwb2pctn3vxc" path="res://addons/func_godot/src/fgd/func_godot_fgd_base_class.gd" id="1_e4wvg"]
+
+[resource]
+script = ExtResource("1_e4wvg")
+classname = "base_io"
+description = "A base class for I/O objects."
+func_godot_internal = false
+base_classes = Array[Resource]([])
+class_properties = {
+"target": "",
+"targetname": ""
+}
+class_property_descriptions = {
+"target": "Targetname of the entity that needs to be activated.",
+"targetname": "A name for an entity so that it can be linked to triggers that are targeting it."
+}
+meta_properties = {
+"color": Color(0.8, 0.8, 0.8, 1),
+"size": AABB(-8, -8, -8, 8, 8, 8)
+}
+node_class = ""
+name_property = ""
+metadata/_custom_type_script = "uid://bnwb2pctn3vxc"

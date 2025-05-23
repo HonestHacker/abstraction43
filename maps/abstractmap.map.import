@@ -1,0 +1,14 @@
+[remap]
+
+importer="func_godot.map"
+type="Resource"
+uid="uid://bemt565tbqqvw"
+path="res://.godot/imported/abstractmap.map-9809bdea859e09194f52117b94424ee7.tres"
+
+[deps]
+
+source_file="res://maps/abstractmap.map"
+dest_files=["res://.godot/imported/abstractmap.map-9809bdea859e09194f52117b94424ee7.tres"]
+
+[params]
+

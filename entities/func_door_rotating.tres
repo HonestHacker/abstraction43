@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="FuncGodotFGDSolidClass" load_steps=5 format=3 uid="uid://cpn7j3uq52gfm"]
+
+[ext_resource type="Resource" uid="uid://dnjwu7nudj2iu" path="res://entities/base/io.tres" id="1_kq443"]
+[ext_resource type="Script" uid="uid://vpdg4tc8e2wi" path="res://addons/func_godot/src/fgd/func_godot_fgd_solid_class.gd" id="1_p8uxq"]
+[ext_resource type="Resource" uid="uid://deqqetqycut25" path="res://entities/base/usable.tres" id="2_2pfr6"]
+[ext_resource type="Script" uid="uid://dfmodcdk3no0f" path="res://scripts/entities/doors/func_door_rotating.gd" id="2_e1626"]
+
+[resource]
+script = ExtResource("1_p8uxq")
+spawn_type = 2
+origin_type = 1
+build_visuals = true
+use_in_baked_light = true
+shadow_casting_setting = 1
+build_occlusion = false
+render_layers = 1
+collision_shape_type = 1
+collision_layer = 1
+collision_mask = 1
+collision_priority = 1.0
+collision_shape_margin = 0.04
+script_class = ExtResource("2_e1626")
+classname = "func_door_rotating"
+description = "A rotating door."
+func_godot_internal = false
+base_classes = Array[Resource]([ExtResource("1_kq443"), ExtResource("2_2pfr6")])
+class_properties = {
+"distance": 90.0,
+"duration": 1.0
+}
+class_property_descriptions = {
+"distance": "Distance (deg)",
+"duration": "Opening duration (s)"
+}
+meta_properties = {
+"color": Color(0.8, 0.8, 0.8, 1),
+"size": AABB(-8, -8, -8, 8, 8, 8)
+}
+node_class = "AnimatableBody3D"
+name_property = ""

@@ -1,0 +1,15 @@
+newmtl dev/Dark/texture_01
+map_Kd textures/dev/Dark/texture_01.png
+
+newmtl dev/Dark/texture_08
+map_Kd textures/dev/Dark/texture_08.png
+
+newmtl dev/Dark/texture_13
+map_Kd textures/dev/Dark/texture_13.png
+
+newmtl dev/Orange/texture_01
+map_Kd textures/dev/Orange/texture_01.png
+
+newmtl dev/Orange/texture_12
+map_Kd textures/dev/Orange/texture_12.png
+
