@@ -222,3 +222,37 @@
 "classname" "info_marker"
 "origin" "-258 0 38"
 }
+// entity 4
+{
+"classname" "func_door_rotating"
+"origin" "-258 0 38"
+"distance" "-90"
+"duration" "1"
+"targetname" "test_door"
+"can_be_used_by_player" "0"
+// brush 0
+{
+( -260 -64 0 ) ( -260 -63 0 ) ( -260 -64 1 ) dev/Orange/texture_12 [ 0 -1 0 192 ] [ 0 0 -1 0 ] 0 0.07692308 0.11837565
+( -272 -48 0 ) ( -272 -48 1 ) ( -271 -48 0 ) dev/Orange/texture_12 [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -272 -64 0 ) ( -271 -64 0 ) ( -272 -63 0 ) dev/Orange/texture_12 [ -1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -256 16 96 ) ( -256 17 96 ) ( -255 16 96 ) dev/Orange/texture_12 [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -256 0 16 ) ( -255 0 16 ) ( -256 0 17 ) dev/Orange/texture_12 [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -256 16 16 ) ( -256 16 17 ) ( -256 17 16 ) dev/Orange/texture_12 [ 0 1 0 -207 ] [ 0 0 -1 -24 ] 0 0.076923 0.118376
+}
+}
+// entity 5
+{
+"classname" "item_action_superjump"
+"origin" "-88 184 56"
+}
+// entity 6
+{
+"classname" "item_action_dash"
+"origin" "-19 189 61"
+}
+// entity 7
+{
+"classname" "prop_floor_button"
+"origin" "-256 144 3"
+"target" "test_door"
+}

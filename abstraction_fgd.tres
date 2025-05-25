@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="FuncGodotFGDFile" load_steps=12 format=3 uid="uid://dvlgp0wjg4ybv"]
+[gd_resource type="Resource" script_class="FuncGodotFGDFile" load_steps=13 format=3 uid="uid://dvlgp0wjg4ybv"]
 
 [ext_resource type="Script" uid="uid://c8e7u2tu1m4gx" path="res://addons/func_godot/src/fgd/func_godot_fgd_file.gd" id="1_u7liy"]
 [ext_resource type="Resource" uid="uid://crgpdahjaj" path="res://addons/func_godot/fgd/func_godot_fgd.tres" id="1_umx6p"]
+[ext_resource type="Resource" uid="uid://bbis4gh3qax12" path="res://addons/func-godot-lightpass/func_godot_lightpass_fgd.tres" id="2_1nqgu"]
 [ext_resource type="Resource" uid="uid://db84etq1xgx0b" path="res://entities/player.tres" id="2_jhwnm"]
 [ext_resource type="Resource" uid="uid://dnjwu7nudj2iu" path="res://entities/base/io.tres" id="2_yk2ar"]
 [ext_resource type="Resource" uid="uid://deqqetqycut25" path="res://entities/base/usable.tres" id="3_aj53i"]
@@ -17,5 +18,5 @@ script = ExtResource("1_u7liy")
 export_file = false
 target_map_editor = 1
 fgd_name = "Abstraction"
-base_fgd_files = Array[Resource]([ExtResource("1_umx6p")])
+base_fgd_files = Array[Resource]([ExtResource("1_umx6p"), ExtResource("2_1nqgu")])
 entity_definitions = Array[Resource]([ExtResource("2_yk2ar"), ExtResource("3_aj53i"), ExtResource("2_jhwnm"), ExtResource("3_egr4m"), ExtResource("4_1k5nh"), ExtResource("5_h6bar"), ExtResource("6_65nua"), ExtResource("7_aei17"), ExtResource("8_8vtcg")])

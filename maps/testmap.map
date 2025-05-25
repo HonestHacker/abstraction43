@@ -253,6 +253,6 @@
 // entity 7
 {
 "classname" "prop_floor_button"
-"origin" "-144 176 3"
+"origin" "-256 144 3"
 "target" "test_door"
 }

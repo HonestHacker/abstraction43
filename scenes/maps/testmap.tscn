@@ -245,11 +245,11 @@ transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.75, 
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.90625, 1.90625, -0.59375)
 
 [node name="entity_7_prop_floor_button" parent="FuncGodotMap" instance=ExtResource("13_ej34b")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.5, 0.09375, -4.5)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.5, 0.09375, -8)
 target = "test_door"
 func_godot_properties = {
 "classname": "prop_floor_button",
-"origin": "-144 176 3",
+"origin": "-256 144 3",
 "target": "test_door",
 "targetname": ""
 }

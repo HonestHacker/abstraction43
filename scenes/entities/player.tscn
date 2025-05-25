@@ -31,7 +31,7 @@ pda = NodePath("Camera/PDA")
 shape = SubResource("CapsuleShape3D_sq03e")
 
 [node name="Camera" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 
 [node name="UseRay" type="RayCast3D" parent="Camera" node_paths=PackedStringArray("player")]
 target_position = Vector3(0, 0, -3)
