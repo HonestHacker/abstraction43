@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="FuncGodotFGDPointClass" load_steps=4 format=3 uid="uid://c0iitc1ugv6v1"]
+
+[ext_resource type="Script" uid="uid://c4xc207ilaefw" path="res://addons/func_godot/src/fgd/func_godot_fgd_point_class.gd" id="1_v0itb"]
+[ext_resource type="Resource" uid="uid://dnjwu7nudj2iu" path="res://entities/base/io.tres" id="1_vvohr"]
+[ext_resource type="Script" uid="uid://bxj26ihkdiptf" path="res://scripts/entities/logical/logic_timer.gd" id="3_8fcx3"]
+
+[resource]
+script = ExtResource("1_v0itb")
+script_class = ExtResource("3_8fcx3")
+apply_rotation_on_map_build = true
+classname = "logic_timer"
+description = "When the logical entity is activated, it triggers a specified target after an interval."
+func_godot_internal = false
+base_classes = Array[Resource]([ExtResource("1_vvohr")])
+class_properties = {
+"time": 1.0
+}
+class_property_descriptions = {
+"time": "Time between the timer fires"
+}
+meta_properties = {
+"color": Color(0.8, 0.8, 0.8, 1),
+"size": AABB(-8, -8, -8, 8, 8, 8)
+}
+node_class = "Node3D"
+name_property = ""
+metadata/_custom_type_script = "uid://c4xc207ilaefw"

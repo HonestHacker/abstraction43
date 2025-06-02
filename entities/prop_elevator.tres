@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="FuncGodotFGDModelPointClass" load_steps=4 format=3 uid="uid://bno4sk0h6rs7o"]
+
+[ext_resource type="Script" uid="uid://dxdfb8rtps08f" path="res://addons/func_godot/src/fgd/func_godot_fgd_model_point_class.gd" id="1_gxij8"]
+[ext_resource type="PackedScene" uid="uid://cg0gcbly1i2fb" path="res://scenes/entities/prop_elevator.tscn" id="1_j8de2"]
+[ext_resource type="Resource" uid="uid://dnjwu7nudj2iu" path="res://entities/base/io.tres" id="1_od70d"]
+
+[resource]
+script = ExtResource("1_gxij8")
+target_map_editor = 0
+models_sub_folder = ""
+scale_expression = ""
+generate_size_property = false
+generate_gd_ignore_file = false
+scene_file = ExtResource("1_j8de2")
+apply_rotation_on_map_build = true
+classname = "prop_elevator"
+description = "An elevator"
+func_godot_internal = false
+base_classes = Array[Resource]([ExtResource("1_od70d")])
+class_properties = {
+"direction": {
+"Down": 0,
+"Up": 1
+},
+"speed": 1.0
+}
+class_property_descriptions = {
+"direction": "A direction of the elevator movement when activated",
+"speed": "Speed of the elevator"
+}
+meta_properties = {
+"color": Color(0.552941, 0.0823529, 0, 1),
+"size": AABB(-32, -32, -42, 32, 32, 42),
+"studio": "\"tb/models/prop_elevator.glb\""
+}
+node_class = ""
+name_property = ""
+metadata/_custom_type_script = "uid://dxdfb8rtps08f"

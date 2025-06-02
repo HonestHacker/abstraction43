@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="FuncGodotFGDFile" load_steps=13 format=3 uid="uid://dvlgp0wjg4ybv"]
+[gd_resource type="Resource" script_class="FuncGodotFGDFile" load_steps=18 format=3 uid="uid://dvlgp0wjg4ybv"]
 
 [ext_resource type="Script" uid="uid://c8e7u2tu1m4gx" path="res://addons/func_godot/src/fgd/func_godot_fgd_file.gd" id="1_u7liy"]
 [ext_resource type="Resource" uid="uid://crgpdahjaj" path="res://addons/func_godot/fgd/func_godot_fgd.tres" id="1_umx6p"]
@@ -12,6 +12,11 @@
 [ext_resource type="Resource" uid="uid://ujj4wimw6684" path="res://entities/item_action_superjump.tres" id="6_65nua"]
 [ext_resource type="Resource" uid="uid://bntff3d6qx2s5" path="res://entities/item_action_dash.tres" id="7_aei17"]
 [ext_resource type="Resource" uid="uid://bcaa2voem48wj" path="res://entities/prop_floor_button.tres" id="8_8vtcg"]
+[ext_resource type="Resource" uid="uid://bno4sk0h6rs7o" path="res://entities/prop_elevator.tres" id="12_lk5yn"]
+[ext_resource type="Resource" uid="uid://dk7vxq3bx17x2" path="res://entities/trigger_area.tres" id="13_shniv"]
+[ext_resource type="Resource" uid="uid://0cui0negkeve" path="res://entities/logic_limiter.tres" id="14_4baut"]
+[ext_resource type="Resource" uid="uid://c0iitc1ugv6v1" path="res://entities/logic_timer.tres" id="15_jiqgp"]
+[ext_resource type="Resource" uid="uid://d2ux8jjgpaej6" path="res://entities/prop_projector_light.tres" id="16_jiqgp"]
 
 [resource]
 script = ExtResource("1_u7liy")
@@ -19,4 +24,4 @@ export_file = false
 target_map_editor = 1
 fgd_name = "Abstraction"
 base_fgd_files = Array[Resource]([ExtResource("1_umx6p"), ExtResource("2_1nqgu")])
-entity_definitions = Array[Resource]([ExtResource("2_yk2ar"), ExtResource("3_aj53i"), ExtResource("2_jhwnm"), ExtResource("3_egr4m"), ExtResource("4_1k5nh"), ExtResource("5_h6bar"), ExtResource("6_65nua"), ExtResource("7_aei17"), ExtResource("8_8vtcg")])
+entity_definitions = Array[Resource]([ExtResource("2_yk2ar"), ExtResource("3_aj53i"), ExtResource("2_jhwnm"), ExtResource("3_egr4m"), ExtResource("4_1k5nh"), ExtResource("5_h6bar"), ExtResource("6_65nua"), ExtResource("7_aei17"), ExtResource("8_8vtcg"), ExtResource("12_lk5yn"), ExtResource("13_shniv"), ExtResource("14_4baut"), ExtResource("15_jiqgp"), ExtResource("16_jiqgp")])

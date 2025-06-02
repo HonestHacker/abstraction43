@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://b2fmy8ttqhvrl"]
+
+[ext_resource type="PackedScene" uid="uid://daxstlc1vrhd4" path="res://models/elevator/elevator.glb" id="1_3o4g6"]
+
+[node name="elevator" instance=ExtResource("1_3o4g6")]
+
+[node name="Куб" parent="." index="1"]
+transform = Transform3D(0.929493, 0, 0, 0, 0.929493, 0, 0, 0, 0.929493, -0.999123, 2.3589, 1.4972)
+
+[node name="Куб_001" parent="." index="2"]
+transform = Transform3D(-0.929493, 0, 0, 0, 0.929493, 0, 0, 0, 0.929493, 1.0199, 2.3589, 1.4972)
