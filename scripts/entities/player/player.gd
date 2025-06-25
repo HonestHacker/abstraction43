@@ -1,24 +1,20 @@
 extends CharacterBody3D
 class_name Player
 
-const SaveAndLoad = preload("res://scripts/singletons/save_and_load.gd")
+static var Preload := preload("res://scripts/ui/hud/pause_menu.gd").new()
 
 @export_category("Activity Controls")
-## Whether the character is currently able to look around
 @export var look_enabled : bool = true : 
 	get:
 		return move_enabled
-	set(val): ## Automatically update the mouse mode when look_enabled changes
+	set(val):
 		look_enabled = val
 		update_mouse_mode()
-## Whether the character is currently able to move
 @export var move_enabled : bool = true 
 @export var jump_when_held : bool = false
 
 @export_category("Input Definitions")
-## Mouse sensitivity multiplier
 @export var sensitivity : Vector2 = Vector2.ONE
-## Movement actions
 @export var move_forward : String
 @export var move_backward : String
 @export var move_left : String
@@ -26,21 +22,13 @@ const SaveAndLoad = preload("res://scripts/singletons/save_and_load.gd")
 @export var jump : String
 
 @export_category("Movement Variables")
-## Gravity
 @export var gravity : float = 30
-## Acceleration when grounded
 @export var ground_accelerate : float = 250
-## Acceleration when in the air
 @export var air_accelerate : float = 85
-## Max velocity on the ground
 @export var max_ground_velocity : float = 10
-## Max velocity in the air
 @export var max_air_velocity : float = 1.5
-## Jump force multiplier
 @export var jump_force : float = 1
-## Friction
 @export var friction : float = 6
-## Bunnyhop window frame length
 @export var bhop_frames : int = 2
 @export var additive_bhop : bool = true
 @export_category("Controlled Nodes")
@@ -63,8 +51,8 @@ func update_mouse_mode():
 
 func mouse_look(event):
 	if look_enabled and can_move and camera and event is InputEventMouseMotion:
-		rotate_y(deg_to_rad(-event.relative.x * sensitivity.y))
-		camera.rotate_x(deg_to_rad(-event.relative.y * sensitivity.x))
+		rotate_y(deg_to_rad(-event.relative.x * sensitivity.x))
+		camera.rotate_x(deg_to_rad(-event.relative.y * sensitivity.y))
 		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-89), deg_to_rad(89))
 
 func get_wishdir():
@@ -108,23 +96,12 @@ func handle_movement(delta):
 	velocity = get_next_velocity(velocity, delta)
 	move_and_slide()
 
-func _physics_process(delta):
-	if $logic/save.visible:
-		if Input.is_action_just_pressed("ui_cancel"):
-			$logic/save.visible = false
-			update_mouse_mode()
-		return
-	if Input.is_action_just_pressed("ui_cancel") and not $logic/settings.visible and not $logic/save.visible:
-		if $logic/pause_menu.visible:
-			$logic/pause_menu.visible = false
-			update_mouse_mode()
-		else:
-			$logic/pause_menu.visible = true
-			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-	if Input.is_action_just_pressed("ui_cancel") and $logic/settings.visible:
-		$logic/settings.visible = false
-		update_mouse_mode()
+func _ready() -> void:
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	Preload.on_start($logic/save/load)
 
+func _physics_process(delta):
+	preload("res://scripts/ui/hud/pause_menu.gd").new().for_process($logic/settings, $logic/save, $logic/pause_menu)
 	handle_movement(delta)
 
 func _unhandled_input(event):
@@ -132,52 +109,26 @@ func _unhandled_input(event):
 		return
 	mouse_look(event)
 
-func _ready():
-	update_mouse_mode()
-	var dir = DirAccess.open("res://save")
-	if dir:
-		dir.list_dir_begin()
-		var file_name = dir.get_next()
-		var save_files = []
-		while file_name != "":
-			if not dir.current_is_dir():
-				save_files.append(file_name)
-			file_name = dir.get_next()
-		dir.list_dir_end()
-		$logic/save/load.clear()
-		for f in save_files:
-			$logic/save/load.add_item(f)
-
-func _on_load_button_pressed() -> void:
-	if $logic/save/load.text.strip_edges() != "":
-		var save_and_load = SaveAndLoad.new()
-		save_and_load.load($logic/save/load.text.strip_edges(), self)
-
-func _on_save_button_pressed() -> void:
-	if $logic/save/save.text.strip_edges() != "":
-		var save_and_load = SaveAndLoad.new()
-		save_and_load.save(self, get_tree().current_scene.scene_file_path, $logic/save/save.text.strip_edges())
-
-func _on_load_and_save_pressed() -> void:
-	$logic/save.visible = true
-
-func _on_continue_pressed() -> void:
-	$logic/pause_menu.visible=false
-	update_mouse_mode()
-
-func _on_new_game_pressed() -> void:
-	get_tree().reload_current_scene()
+func _on_exit_pressed() -> void:
+	Preload.on_exit_pressed(get_tree())
 
 func _on_settings_pressed() -> void:
-	$logic/settings.visible=true
-	$logic/pause_menu.visible=false
+	Preload.on_settings_pressed($logic/settings,$logic/pause_menu)
 
-func _on_exit_pressed() -> void:
-	get_tree().quit()
+func _on_load_and_save_pressed() -> void:
+	Preload.on_load_and_save_pressed($logic/save, $logic/pause_menu)
 
-func _on_back_pressed() -> void:
-	$logic/settings.visible=false
-	$logic/pause_menu.visible=true
+func _on_new_game_pressed() -> void:
+	Preload.on_new_game_pressed(get_tree())
+
+func _on_continue_pressed() -> void:
+	Preload.on_continue_pressed($logic/pause_menu,self)
+
+func _on_load_button_pressed() -> void:
+	Preload.on_load_button_pressed($logic/save/load, self, $Camera)
+
+func _on_save_button_pressed() -> void:
+	Preload.on_save_button_pressed($logic/save/save, self, $Camera, get_tree())
 
 func _on_fov_slider_value_changed(value: float) -> void:
-	$Camera.fov = value
+	Preload.on_fov_slider_value_changed(value,$Camera)
