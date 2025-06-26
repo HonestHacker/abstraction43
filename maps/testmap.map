@@ -256,3 +256,13 @@
 "origin" "-256 144 3"
 "target" "test_door"
 }
+// entity 8
+{
+"classname" "item_action_gravityinversion"
+"origin" "-141 163 45"
+}
+// entity 9
+{
+"classname" "item_action_gravityinversion"
+"origin" "-205 163 45"
+}

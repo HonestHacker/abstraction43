@@ -65,6 +65,10 @@ var can_move : bool = true :
 	set(val):
 		can_move = val
 
+# Gravity inversion variables
+var gravity_scale: float = 1.0
+var is_flipping: bool = false
+
 ## Utility function for setting mouse mode, always visible if camera is unset
 func update_mouse_mode():
 	if look_enabled and camera:
@@ -88,13 +92,16 @@ func get_wishdir():
 			(transform.basis.z * Input.get_axis(move_forward, move_backward)) +\
 			(transform.basis.x * Input.get_axis(move_left, move_right))
 
+func is_on_ground() -> bool:
+	return is_on_floor() if gravity_scale >= 0 else is_on_ceiling()
+
 ## Get jump force
 func get_jump():
-	return sqrt(4 * jump_force * gravity)
+	return sqrt(4 * jump_force * gravity) * gravity_scale
 
 ## Get gravity force
 func get_player_gravity(delta):
-	return gravity * delta
+	return gravity * gravity_scale * delta
 
 ######
 # All this code was only possible thanks to the technical writeup by Flafla2 available below.
@@ -115,7 +122,7 @@ func accelerate(accelDir, prevVelocity, acceleration, max_vel, delta):
 
 ## Get intended velocity for the next frame
 func get_next_velocity(previousVelocity, delta):
-	var grounded = is_on_floor()
+	var grounded = is_on_ground() 
 	var can_jump = grounded # Jumping is a seperate var in case of additive bunnyhopping modifying grounded
 	
 	# Apply friction if player is grounded, and if the frame_timer indicates it should be applied
@@ -150,7 +157,7 @@ func get_next_velocity(previousVelocity, delta):
 var frame_timer = bhop_frames
 ## Update frame timer if necessary
 func update_frame_timer():
-	if is_on_floor():
+	if is_on_ground():
 		frame_timer += 1
 	else:
 		frame_timer = 0
