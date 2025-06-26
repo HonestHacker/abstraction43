@@ -1,0 +1,266 @@
+[gd_scene load_steps=10 format=3 uid="uid://6e0dcgptp8lq"]
+
+[ext_resource type="Script" uid="uid://m30fino0b43d" path="res://scripts/entities/player/player.gd" id="1_2e6ej"]
+[ext_resource type="Script" uid="uid://dlo6kr6oe5he" path="res://scripts/entities/player/use_ray.gd" id="3_nnckv"]
+[ext_resource type="Script" uid="uid://yis8s8uwh4n0" path="res://scripts/entities/player/pickup_area.gd" id="4_undc7"]
+[ext_resource type="Script" uid="uid://c13mc5s3njuht" path="res://scripts/entities/player/pda/pda.gd" id="5_vutjv"]
+[ext_resource type="Script" uid="uid://xg7q5nrwp1al" path="res://scripts/entities/player/pda/action_queue.gd" id="6_nud00"]
+[ext_resource type="Script" uid="uid://1s466soi00u5" path="res://scripts/ui/hud/pda_hud.gd" id="7_po8h8"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sq03e"]
+height = 2.25
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_gqv6t"]
+radius = 0.6
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_d4qa6"]
+
+[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("camera", "pda")]
+script = ExtResource("1_2e6ej")
+look_enabled = null
+move_enabled = null
+jump_when_held = null
+sensitivity = Vector2(0.1, 0.1)
+move_forward = "move_forward"
+move_backward = "move_backward"
+move_left = "move_left"
+move_right = "move_right"
+jump = "jump"
+gravity = null
+ground_accelerate = null
+air_accelerate = null
+max_ground_velocity = 6.0
+max_air_velocity = null
+jump_force = null
+friction = null
+bhop_frames = null
+additive_bhop = null
+camera = NodePath("Camera")
+pda = NodePath("Camera/PDA")
+debug_mode_enabled = null
+
+[node name="CollisionShape" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_sq03e")
+
+[node name="Camera" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="UseRay" type="RayCast3D" parent="Camera" node_paths=PackedStringArray("player")]
+target_position = Vector3(0, 0, -3)
+script = ExtResource("3_nnckv")
+player = NodePath("../..")
+
+[node name="PickupArea" type="Area3D" parent="Camera" node_paths=PackedStringArray("floor_area")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.41386)
+gravity_space_override = 1
+gravity_point_center = Vector3(0, 0, 0)
+gravity_direction = Vector3(0, 0, 0)
+gravity = 0.0
+script = ExtResource("4_undc7")
+floor_area = NodePath("../../FloorArea")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Camera/PickupArea"]
+shape = SubResource("SphereShape3D_gqv6t")
+
+[node name="PDA" type="Node3D" parent="Camera" node_paths=PackedStringArray("action_queue", "hud")]
+script = ExtResource("5_vutjv")
+action_queue = NodePath("ActionQueue")
+hud = NodePath("HUD")
+
+[node name="ActionQueue" type="Node" parent="Camera/PDA"]
+script = ExtResource("6_nud00")
+
+[node name="HUD" type="Control" parent="Camera/PDA" node_paths=PackedStringArray("actions")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("7_po8h8")
+actions = NodePath("Actions")
+
+[node name="Actions" type="HBoxContainer" parent="Camera/PDA/HUD"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="FloorArea" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.13739, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="FloorArea"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.460535, 0)
+shape = SubResource("BoxShape3D_d4qa6")
+
+[node name="pause_menu" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="continue_game" type="Button" parent="pause_menu"]
+layout_mode = 0
+offset_left = 422.0
+offset_top = 29.0
+offset_right = 770.0
+offset_bottom = 123.0
+text = "continue"
+
+[node name="new_game" type="Button" parent="pause_menu"]
+layout_mode = 0
+offset_left = 420.0
+offset_top = 132.0
+offset_right = 768.0
+offset_bottom = 241.0
+text = "new game"
+
+[node name="settings" type="Button" parent="pause_menu"]
+layout_mode = 0
+offset_left = 420.0
+offset_top = 247.0
+offset_right = 768.0
+offset_bottom = 346.0
+text = "settings"
+
+[node name="quit" type="Button" parent="pause_menu"]
+layout_mode = 0
+offset_left = 417.0
+offset_top = 359.0
+offset_right = 765.0
+offset_bottom = 463.0
+text = "quit"
+
+[node name="save_and_load" type="Button" parent="pause_menu"]
+layout_mode = 0
+offset_left = 418.0
+offset_top = 478.0
+offset_right = 766.0
+offset_bottom = 582.0
+text = "save or load"
+
+[node name="settings" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = 476.0
+offset_top = 290.0
+offset_right = 516.0
+offset_bottom = 330.0
+
+[node name="FOV_slider" type="HSlider" parent="settings"]
+layout_mode = 0
+offset_left = 404.0
+offset_top = -222.0
+offset_right = 665.0
+offset_bottom = -206.0
+
+[node name="Label" type="Label" parent="settings/FOV_slider"]
+layout_mode = 0
+offset_left = -86.0
+offset_top = -3.0
+offset_right = -46.0
+offset_bottom = 20.0
+text = "FOV"
+
+[node name="sensetivity_slider" type="HSlider" parent="settings"]
+layout_mode = 0
+offset_left = 403.0
+offset_top = -196.0
+offset_right = 662.0
+offset_bottom = -180.0
+min_value = 50.0
+value = 50.0
+
+[node name="Label" type="Label" parent="settings/sensetivity_slider"]
+layout_mode = 0
+offset_left = -86.0
+offset_top = -4.0
+offset_right = -3.0
+offset_bottom = 20.0
+text = "sensetivity"
+
+[node name="resulotion" type="OptionButton" parent="settings"]
+layout_mode = 0
+offset_left = 410.0
+offset_top = -170.0
+offset_right = 660.0
+offset_bottom = -150.0
+
+[node name="Label" type="Label" parent="settings/resulotion"]
+layout_mode = 0
+offset_left = -93.0
+offset_top = -3.0
+offset_right = -13.0
+offset_bottom = 20.0
+text = "resulotion"
+
+[node name="volume_slider" type="HSlider" parent="settings"]
+layout_mode = 0
+offset_left = 410.0
+offset_top = -140.0
+offset_right = 657.0
+offset_bottom = -124.0
+
+[node name="Label" type="Label" parent="settings/volume_slider"]
+layout_mode = 0
+offset_left = -92.0
+offset_top = -6.0
+offset_right = -34.0
+offset_bottom = 17.0
+text = "volume"
+
+[node name="back" type="Button" parent="settings"]
+layout_mode = 0
+offset_left = 563.0
+offset_top = -102.0
+offset_right = 663.0
+offset_bottom = -51.0
+text = "back"
+
+[node name="save" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="load" type="OptionButton" parent="save"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 58.0
+offset_right = 220.0
+offset_bottom = 81.0
+
+[node name="load_button" type="Button" parent="save/load"]
+layout_mode = 0
+offset_left = 221.0
+offset_top = -4.0
+offset_right = 273.0
+offset_bottom = 25.0
+
+[node name="save" type="LineEdit" parent="save"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 24.0
+offset_right = 220.0
+offset_bottom = 55.0
+
+[node name="save_button" type="Button" parent="save/save"]
+layout_mode = 0
+offset_left = 220.0
+offset_top = -1.0
+offset_right = 273.0
+offset_bottom = 27.0
+
+[connection signal="body_exited" from="Camera/PickupArea" to="Camera/PickupArea" method="_on_body_exited"]
+[connection signal="pressed" from="pause_menu/continue_game" to="." method="_on_continue_game_pressed"]
+[connection signal="pressed" from="pause_menu/new_game" to="." method="_on_new_game_pressed"]
+[connection signal="pressed" from="pause_menu/settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="pause_menu/quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="pause_menu/save_and_load" to="." method="_on_save_and_load_pressed"]
+[connection signal="value_changed" from="settings/FOV_slider" to="." method="_on_fov_slider_value_changed"]
+[connection signal="pressed" from="settings/back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="save/load/load_button" to="." method="_on_load_button_pressed"]
+[connection signal="pressed" from="save/save/save_button" to="." method="_on_save_button_pressed"]

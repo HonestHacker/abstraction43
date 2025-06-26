@@ -17,7 +17,7 @@ func _physics_process(delta: float) -> void:
 			drop()
 		else:
 			for body in get_overlapping_bodies():
-				if body is RigidBody3D and not (body in floor_area.get_overlapping_bodies()):
+				if body is RigidBody3D and not (body in floor_area.get_overlapping_bodies()) and not body.is_in_group("no_pickup"):
 					pick(body)
 					break
 	if picked_prop != null and weakref(picked_prop).get_ref():
