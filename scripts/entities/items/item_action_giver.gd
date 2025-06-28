@@ -4,6 +4,12 @@ extends Area3D
 @export var action: Script
 @export var rotation_speed: float = deg_to_rad(90)
 
+var picked_up = false : 
+	set(value):
+		picked_up = value
+		visible = not picked_up
+		
+
 func _on_body_entered(body: Node3D) -> void:
 	if body is Player:
 		body.pda.action_queue.push(action.new())
