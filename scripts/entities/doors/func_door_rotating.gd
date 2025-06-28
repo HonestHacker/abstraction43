@@ -25,6 +25,9 @@ var closed := true
 var tween: Tween
 
 func _ready() -> void:
+	var serializable := Serializable.new()
+	add_child(serializable)
+	serializable.add_object_properties(self, ["rotation"])
 	if !Engine.is_editor_hint():
 		GameManager.set_targetname(self, targetname)
 

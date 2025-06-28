@@ -85,7 +85,8 @@ shape = SubResource("BoxShape3D_d4qa6")
 [node name="Serializable" type="Node" parent="."]
 script = ExtResource("7_ss7kx")
 properties = Dictionary[NodePath, PackedStringArray]({
-NodePath(".."): PackedStringArray("position", "rotation", "velocity")
+NodePath(".."): PackedStringArray("position", "rotation", "velocity", "gravity_scale", "is_flipping"),
+NodePath("../Camera/PDA/ActionQueue"): PackedStringArray("actions_dump")
 })
 metadata/_custom_type_script = "uid://byyhcsligsyg2"
 

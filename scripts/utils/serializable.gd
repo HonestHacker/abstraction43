@@ -1,13 +1,41 @@
 @icon("res://textures/ui/toolkit/saveload_system_icon.svg")
 extends Node
 class_name Serializable
+## Serializable node that manages saving/restoring state for tracked properties
+##
+## Attach to any node to make its properties persistent. Tracks specified properties
+## across child nodes and provides serialization/deserialization functionality.
 
+## Dictionary of tracked properties per node path.[br]
+## Key: [NodePath] to target node.[br]
+## Value: [PackedStringArray] of property names to track.[br]
 @export var properties: Dictionary[NodePath, PackedStringArray]
 
 func _ready() -> void:
 	name = get_parent().name + "Serializable"
 	add_to_group("serializables")
 
+## Adds properties from a node to be tracked for serialization[br]
+##
+## [param object]: Node whose properties should be tracked[br]
+## [param property_list]: List of property names (as strings) to track.
+func add_object_properties(object: Node, property_list: PackedStringArray):
+	var node_path := get_path_to(object)
+	properties[node_path] = property_list
+
+## Serializes tracked properties into a save dictionary.[br]
+##
+## Structure:[br]
+## [codeblock]
+## {
+##     ^"NodePath": {
+##         "property": "stringified_value",
+##         ...
+##     },
+##     ...
+## }
+## [/codeblock]
+## Returns dictionary containing all tracked property values.
 func save() -> Dictionary:
 	var data: Dictionary[String, Dictionary] = {}
 	for object in properties:
@@ -20,6 +48,9 @@ func save() -> Dictionary:
 		data[str(object)] = object_data
 	return data
 
+## Restores property states from serialized data.[br]
+##
+## [param data]: Dictionary created by [method save] method containing property states.
 func restore(data: Dictionary) -> void:
 	for object_path in data:
 		var object = get_node(object_path)
