@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=4 uid="uid://cg0gcbly1i2fb"]
+[gd_scene load_steps=27 format=4 uid="uid://cg0gcbly1i2fb"]
 
 [ext_resource type="Script" uid="uid://pgm8rppgxh75" path="res://scripts/entities/elevator/prop_elevator.gd" id="1_8omwg"]
 [ext_resource type="Texture2D" uid="uid://caajf0d2chbwb" path="res://models/elevator/elevator_wood.jpg" id="2_rkw1k"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bo7u23s256pnj" path="res://models/elevator/elevator_gril.jpg" id="4_sj47c"]
 [ext_resource type="Texture2D" uid="uid://c0m5gcsae7g8s" path="res://models/elevator/elevator_metal.jpg" id="5_ah4fu"]
 [ext_resource type="Texture2D" uid="uid://cdl5nydmuetrl" path="res://models/elevator/elevator_dark metal.jpg" id="6_u01d1"]
+[ext_resource type="Script" uid="uid://byyhcsligsyg2" path="res://scripts/utils/serializable.gd" id="7_rkw1k"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t00tr"]
 resource_name = "дерево"
@@ -432,3 +433,10 @@ shape = SubResource("ConcavePolygonShape3D_twp58")
 libraries = {
 &"": SubResource("AnimationLibrary_n52tm")
 }
+
+[node name="Serializable" type="Node" parent="."]
+script = ExtResource("7_rkw1k")
+properties = Dictionary[NodePath, PackedStringArray]({
+NodePath(".."): PackedStringArray("position", "idx")
+})
+metadata/_custom_type_script = "uid://byyhcsligsyg2"

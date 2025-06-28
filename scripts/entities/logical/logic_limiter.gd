@@ -20,6 +20,9 @@ var activation_count: int = 0
 		return func_godot_properties
 
 func _ready() -> void:
+	var serializable := Serializable.new()
+	add_child(serializable)
+	serializable.add_object_properties(self, ["activation_count"])
 	if !Engine.is_editor_hint():
 		GameManager.set_targetname(self, targetname)
 

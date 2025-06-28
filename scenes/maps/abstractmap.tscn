@@ -1929,7 +1929,7 @@ shape = SubResource("ConvexPolygonShape3D_qmo3g")
 transform = Transform3D(1.39071e-07, 0, 1, 0, 1, 0, -1, 0, 1.39071e-07, -40.25, 21.25, 64.5)
 
 [node name="entity_53_player" parent="FuncGodotMap" instance=ExtResource("5_x31dy")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -11.5, -17.875, 35)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1, 1.625, -1)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_dx1gy")

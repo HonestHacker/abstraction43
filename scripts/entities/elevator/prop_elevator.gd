@@ -51,6 +51,11 @@ func _ready() -> void:
 			Action.CLOSE
 		]
 
+func idle():
+	if opened:
+		animation_player.play("RESET")
+		opened = false
+
 func open():
 	if not opened:
 		animation_player.play('open')
@@ -65,6 +70,8 @@ func _physics_process(delta):
 	if Engine.is_editor_hint():
 		return
 	match elevator_program[idx]:
+		Action.IDLING:
+			idle()
 		Action.OPEN:
 			open()
 		Action.CLOSE:

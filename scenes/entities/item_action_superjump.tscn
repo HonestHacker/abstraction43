@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://b72j52vxrubvj"]
+[gd_scene load_steps=8 format=3 uid="uid://b72j52vxrubvj"]
 
 [ext_resource type="Script" uid="uid://bbc28eela4pub" path="res://scripts/entities/items/item_action_giver.gd" id="1_7pshi"]
 [ext_resource type="Script" uid="uid://cdi2bbqcpdopf" path="res://scripts/entities/player/pda/actions/superjump_action.gd" id="2_kjukt"]
 [ext_resource type="ArrayMesh" uid="uid://b5iy4afoqguwq" path="res://models/actions/arrow.res" id="2_mbnr0"]
 [ext_resource type="Shader" uid="uid://cbkojfueinkt8" path="res://shaders/hologram.gdshader" id="3_ugbhr"]
+[ext_resource type="Script" uid="uid://byyhcsligsyg2" path="res://scripts/utils/serializable.gd" id="5_cu5yo"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_26fjp"]
 resource_local_to_scene = true
@@ -25,10 +26,11 @@ shader_parameter/flickering = 0.55
 [sub_resource type="SphereShape3D" id="SphereShape3D_4dygs"]
 radius = 0.41
 
-[node name="ItemActionSuperjump" type="Area3D"]
+[node name="ItemActionSuperjump" type="Area3D" node_paths=PackedStringArray("collision_shape")]
 script = ExtResource("1_7pshi")
 action = ExtResource("2_kjukt")
 rotation_speed = 0.8725
+collision_shape = NodePath("CollisionShape3D")
 
 [node name="Arrow" type="MeshInstance3D" parent="."]
 transform = Transform3D(2, 0, 0, 0, -8.74228e-08, 2, 0, -2, -8.74228e-08, 0, 0, 0)
@@ -37,5 +39,12 @@ mesh = ExtResource("2_mbnr0")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("SphereShape3D_4dygs")
+
+[node name="Serializable" type="Node" parent="."]
+script = ExtResource("5_cu5yo")
+properties = Dictionary[NodePath, PackedStringArray]({
+NodePath(".."): PackedStringArray("picked_up")
+})
+metadata/_custom_type_script = "uid://byyhcsligsyg2"
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
