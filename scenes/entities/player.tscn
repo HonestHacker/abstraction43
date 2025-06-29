@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://6e0dcgptp8lq"]
+[gd_scene load_steps=12 format=3 uid="uid://6e0dcgptp8lq"]
 
 [ext_resource type="Script" uid="uid://m30fino0b43d" path="res://scripts/entities/player/player.gd" id="1_2e6ej"]
 [ext_resource type="Script" uid="uid://dlo6kr6oe5he" path="res://scripts/entities/player/use_ray.gd" id="3_nnckv"]
@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://xg7q5nrwp1al" path="res://scripts/entities/player/pda/action_queue.gd" id="6_nud00"]
 [ext_resource type="Script" uid="uid://1s466soi00u5" path="res://scripts/ui/hud/pda_hud.gd" id="7_po8h8"]
 [ext_resource type="Script" uid="uid://byyhcsligsyg2" path="res://scripts/utils/serializable.gd" id="7_ss7kx"]
+[ext_resource type="Script" uid="uid://duvcra355udj0" path="res://scripts/entities/player/damage_indicator.gd" id="8_dnykm"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sq03e"]
 height = 2.25
@@ -16,7 +17,7 @@ radius = 0.6
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_d4qa6"]
 
-[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("camera", "pda")]
+[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("camera", "pda", "alive_camera_position", "died_camera_position")]
 script = ExtResource("1_2e6ej")
 sensitivity = Vector2(0.1, 0.1)
 move_forward = "move_forward"
@@ -27,6 +28,8 @@ jump = "jump"
 max_ground_velocity = 6.0
 camera = NodePath("Camera")
 pda = NodePath("Camera/PDA")
+alive_camera_position = NodePath("AliveCameraPosition")
+died_camera_position = NodePath("DiedCameraPosition")
 
 [node name="CollisionShape" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_sq03e")
@@ -85,9 +88,24 @@ shape = SubResource("BoxShape3D_d4qa6")
 [node name="Serializable" type="Node" parent="."]
 script = ExtResource("7_ss7kx")
 properties = Dictionary[NodePath, PackedStringArray]({
-NodePath(".."): PackedStringArray("position", "rotation", "velocity", "gravity_scale", "is_flipping"),
+NodePath(".."): PackedStringArray("position", "rotation", "velocity", "gravity_scale", "is_flipping", "hp"),
 NodePath("../Camera/PDA/ActionQueue"): PackedStringArray("actions_dump")
 })
 metadata/_custom_type_script = "uid://byyhcsligsyg2"
+
+[node name="DamageIndicator" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(1, 0, 0, 0)
+script = ExtResource("8_dnykm")
+
+[node name="AliveCameraPosition" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="DiedCameraPosition" type="Node3D" parent="."]
 
 [connection signal="body_exited" from="Camera/PickupArea" to="Camera/PickupArea" method="_on_body_exited"]

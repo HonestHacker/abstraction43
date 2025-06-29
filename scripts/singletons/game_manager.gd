@@ -1,6 +1,9 @@
 extends Node
 class_name AbstractionGameManager
 
+
+var player : Player
+
 # This GDScript 2 function helps reorient Point Entities imported from Trenchbroom via Qodot that utilize the "mangle" key value pair.
 # This assumes your entities are intended to be -Z forward as per Godot's position system.
 # Light and Info_Intermission entities have special orientations in Trenchbroom. If you utilize those key prefixes
