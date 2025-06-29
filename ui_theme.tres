@@ -1,0 +1,8 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://crl6wp1g56s1w"]
+
+[ext_resource type="FontFile" uid="uid://bhhu1yoq03ii5" path="res://fonts/PTM75F.ttf" id="1_touxu"]
+
+[resource]
+default_font = ExtResource("1_touxu")
+Button/font_sizes/font_size = 24
+Button/fonts/font = ExtResource("1_touxu")

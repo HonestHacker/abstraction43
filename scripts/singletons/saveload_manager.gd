@@ -6,6 +6,13 @@ class_name AbstractionSaveloadManager
 ## Handles saving and restoring game state using Serializable nodes.
 ## Manages save files in [code]user://save/[/code] directory with JSON serialization.
 
+## Returns [PackedStringArray] which contains all files in save/ directory
+func get_savefile_list() -> PackedStringArray:
+	var dir = DirAccess.open("user://save")
+	if not dir:
+		return []
+	return dir.get_files()
+
 ## Saves game state to a file[br]
 ##
 ## Collects data from all Serializable nodes, serializes to JSON, and writes to [code]user://save/<filename>[/code].[br]

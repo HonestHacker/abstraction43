@@ -1,17 +1,26 @@
-[gd_scene load_steps=3 format=3 uid="uid://cgcm434dd0bh5"]
+[gd_scene load_steps=7 format=3 uid="uid://cgcm434dd0bh5"]
 
 [ext_resource type="Texture2D" uid="uid://ky7kg4dssf3l" path="res://textures/ui/main_menu/background1.png" id="1_l6cm7"]
-[ext_resource type="FontFile" uid="uid://bhhu1yoq03ii5" path="res://fonts/PTM75F.ttf" id="2_ekxnf"]
+[ext_resource type="Script" uid="uid://p74yhdak6ec2" path="res://scripts/ui/main_menu.gd" id="1_wu84c"]
+[ext_resource type="FontFile" uid="uid://bon7ldibw5wn1" path="res://fonts/CALDERIOUS.ttf" id="2_bqqt6"]
+[ext_resource type="Theme" uid="uid://crl6wp1g56s1w" path="res://ui_theme.tres" id="3_wu84c"]
+[ext_resource type="Script" uid="uid://cdr8trfg7hoxv" path="res://scripts/ui/load_game_window.gd" id="5_8ln24"]
+[ext_resource type="Script" uid="uid://bacvexd2s45ag" path="res://scripts/ui/loading_progress_window.gd" id="6_rtw2f"]
 
-[node name="main_menu" type="Control"]
+[node name="main_menu" type="Control" node_paths=PackedStringArray("main_menu_background", "pause_menu_background", "load_game_window")]
+process_mode = 3
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_wu84c")
+main_menu_background = NodePath("MainMenuBackground")
+pause_menu_background = NodePath("PauseMenuBackground")
+load_game_window = NodePath("LoadGameWindow")
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="MainMenuBackground" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -21,35 +30,106 @@ grow_vertical = 2
 texture = ExtResource("1_l6cm7")
 expand_mode = 1
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
+[node name="PauseMenuBackground" type="ColorRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.0980392, 0.0980392, 0.0980392, 0.686275)
+
+[node name="ButtonContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
+offset_left = 55.0
 offset_top = -97.5
-offset_right = 317.0
+offset_right = 372.0
 offset_bottom = 97.5
 grow_vertical = 2
 
-[node name="Label" type="Label" parent="VBoxContainer"]
+[node name="Label" type="Label" parent="ButtonContainer"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_ekxnf")
+theme_override_fonts/font = ExtResource("2_bqqt6")
 theme_override_font_sizes/font_size = 48
 text = "Abstraction"
 
-[node name="NewGame" type="Button" parent="VBoxContainer"]
+[node name="NewGame" type="Button" parent="ButtonContainer"]
 layout_mode = 2
+theme = ExtResource("3_wu84c")
 text = "New game"
+alignment = 0
 
-[node name="LoadGame" type="Button" parent="VBoxContainer"]
+[node name="SaveGame" type="Button" parent="ButtonContainer"]
+visible = false
 layout_mode = 2
+theme = ExtResource("3_wu84c")
+text = "Save game"
+alignment = 0
+
+[node name="LoadGame" type="Button" parent="ButtonContainer"]
+layout_mode = 2
+theme = ExtResource("3_wu84c")
 text = "Load game"
+alignment = 0
 
-[node name="Settings" type="Button" parent="VBoxContainer"]
+[node name="Settings" type="Button" parent="ButtonContainer"]
 layout_mode = 2
+theme = ExtResource("3_wu84c")
 text = "Settings"
+alignment = 0
 
-[node name="Quit" type="Button" parent="VBoxContainer"]
+[node name="Quit" type="Button" parent="ButtonContainer"]
 layout_mode = 2
+theme = ExtResource("3_wu84c")
 text = "Quit
 "
+alignment = 0
+
+[node name="LoadGameWindow" type="Window" parent="." node_paths=PackedStringArray("list")]
+title = "Load a saved game..."
+initial_position = 1
+size = Vector2i(250, 200)
+visible = false
+theme = ExtResource("3_wu84c")
+script = ExtResource("5_8ln24")
+list = NodePath("Saves")
+
+[node name="Saves" type="ItemList" parent="LoadGameWindow"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_wu84c")
+
+[node name="LoadingProgressWindow" type="Window" parent="." node_paths=PackedStringArray("progress_bar")]
+gui_disable_input = true
+title = "Loading..."
+initial_position = 1
+size = Vector2i(300, 25)
+visible = false
+unresizable = true
+theme = ExtResource("3_wu84c")
+script = ExtResource("6_rtw2f")
+progress_bar = NodePath("ProgressBar")
+
+[node name="ProgressBar" type="ProgressBar" parent="LoadingProgressWindow"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+rounded = true
+
+[connection signal="new_game_started" from="." to="." method="_on_new_game_started"]
+[connection signal="pressed" from="ButtonContainer/NewGame" to="." method="_on_new_game_pressed"]
+[connection signal="pressed" from="ButtonContainer/SaveGame" to="." method="_on_save_game_pressed"]
+[connection signal="pressed" from="ButtonContainer/LoadGame" to="." method="_on_load_game_pressed"]
+[connection signal="pressed" from="ButtonContainer/Quit" to="." method="_on_quit_pressed"]
+[connection signal="about_to_popup" from="LoadGameWindow" to="LoadGameWindow" method="_on_about_to_popup"]
+[connection signal="item_activated" from="LoadGameWindow/Saves" to="LoadGameWindow" method="_on_saves_item_activated"]
