@@ -1877,10 +1877,10 @@ metadata/_godot_to_quake_uuid = 2605754276
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -23.9063, 19.9063, 64.4063)
 
 [node name="entity_45_prop_floor_button" parent="FuncGodotMap" instance=ExtResource("16_58q11")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -48.5, 27.125, 74)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -48.5, 27.125, 72.5)
 func_godot_properties = {
 "classname": "prop_floor_button",
-"origin": "2368 -1552 868",
+"origin": "2320 -1552 868",
 "target": "",
 "targetname": ""
 }

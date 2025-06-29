@@ -1,7 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://bo4tp400tvd16"]
+[gd_scene load_steps=3 format=3 uid="uid://bo4tp400tvd16"]
 
-[ext_resource type="PackedScene" uid="uid://d1ux837plp8ix" path="res://scenes/maps/testmap.tscn" id="1_o5qli"]
+[ext_resource type="Script" uid="uid://csuruq80gf686" path="res://scripts/main.gd" id="1_0wfyh"]
+[ext_resource type="PackedScene" uid="uid://cgcm434dd0bh5" path="res://scenes/main_menu.tscn" id="1_o5qli"]
 
-[node name="Main" type="Node"]
+[node name="Main" type="Node" node_paths=PackedStringArray("main_menu")]
+script = ExtResource("1_0wfyh")
+main_menu = NodePath("main_menu")
+map_scene = "uid://iadptmadrpxg"
 
-[node name="Map" parent="." instance=ExtResource("1_o5qli")]
+[node name="main_menu" parent="." instance=ExtResource("1_o5qli")]
+
+[connection signal="load_game_pressed" from="main_menu" to="." method="_on_main_menu_load_game_pressed"]
+[connection signal="new_game_started" from="main_menu" to="." method="_on_main_menu_new_game_started"]
