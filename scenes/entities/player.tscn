@@ -54,8 +54,9 @@ floor_area = NodePath("../../FloorArea")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Camera/PickupArea"]
 shape = SubResource("SphereShape3D_gqv6t")
 
-[node name="PDA" type="Node3D" parent="Camera" node_paths=PackedStringArray("action_queue", "hud")]
+[node name="PDA" type="Node3D" parent="Camera" node_paths=PackedStringArray("player", "action_queue", "hud")]
 script = ExtResource("5_vutjv")
+player = NodePath("../..")
 action_queue = NodePath("ActionQueue")
 hud = NodePath("HUD")
 

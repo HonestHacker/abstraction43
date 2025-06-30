@@ -1,3 +1,4 @@
+@tool
 extends Node
 
 
@@ -14,7 +15,8 @@ extends Node
 		return func_godot_properties 
 
 func _ready() -> void:
-	GameManager.set_targetname(self, targetname)
+	if not Engine.is_editor_hint():
+		GameManager.set_targetname(self, targetname)
 
 func use(_activator: Node) -> void:
 	GameManager.player.hp -= damage
