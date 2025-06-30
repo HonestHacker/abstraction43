@@ -2,6 +2,8 @@ extends CharacterBody3D
 class_name Player
 
 
+signal died
+
 @export_category("Activity Controls")
 ## Whether the character is currently able to look around
 @export var look_enabled : bool = true : 
@@ -45,11 +47,17 @@ class_name Player
 ## converge to the player's wishdir
 @export var additive_bhop : bool = true
 
+@export_category("Health Properties")
+## Maximum health points
+@export var max_hp : int = 100
+
 @export_category("Controlled Nodes")
 ## Camera to update with mouse controls
 @export var camera : Camera3D
 ## The PDA
 @export var pda: PDA
+@export var alive_camera_position : Node3D
+@export var died_camera_position : Node3D
 
 @export_category("Debug")
 ## Whether to look for and update debug raycasts
@@ -68,6 +76,15 @@ var can_move : bool = true :
 # Gravity inversion variables
 var gravity_scale: float = 1.0
 var is_flipping: bool = false
+
+# Health variables
+var hp := max_hp :
+	set(value):
+		if value <= 0:
+			died.emit()
+		elif hp <= 0:
+			revive()
+		hp = value
 
 ## Utility function for setting mouse mode, always visible if camera is unset
 func update_mouse_mode():
@@ -169,6 +186,17 @@ func handle_movement(delta):
 	velocity = get_next_velocity(velocity, delta)
 	move_and_slide()
 
+func revive() -> void:
+	move_enabled = true
+	camera.transform.origin = alive_camera_position.transform.origin
+	
+
+func die() -> void:
+	move_enabled = false
+	camera.transform.origin = died_camera_position.transform.origin
+	await get_tree().create_timer(3.0).timeout
+	SaveloadManager.restore(SaveloadManager.get_savefile_list()[0])
+
 ## Conditionally update debug raycasts
 func draw_debug():
 	if not debug_mode_enabled:
@@ -193,3 +221,5 @@ func _unhandled_input(event):
 
 func _ready():
 	update_mouse_mode()
+	died.connect(die)
+	GameManager.player = self

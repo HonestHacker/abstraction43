@@ -22,6 +22,7 @@ func _ready() -> void:
 	pass
 
 func press():
+
 	GameManager.use_targets(self)
 	anim_player.play("press")
 	pressed = true
@@ -33,10 +34,12 @@ func release():
 
 func _on_activation_area_body_entered(body: Node3D) -> void:
 	if body is RigidBody3D or body is Player:
+		print(body)
 		if not pressed:
 			press()
 
 func _on_activation_area_body_exited(body: Node3D) -> void:
 	if body is RigidBody3D or body is Player:
+		print(body)
 		if pressed:
 			release()

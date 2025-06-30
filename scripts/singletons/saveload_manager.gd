@@ -11,7 +11,9 @@ func get_savefile_list() -> PackedStringArray:
 	var dir = DirAccess.open("user://save")
 	if not dir:
 		return []
-	return dir.get_files()
+	var result := dir.get_files()
+	result.reverse()
+	return result
 
 ## Saves game state to a file[br]
 ##
