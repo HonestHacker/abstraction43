@@ -97,8 +97,8 @@ func mouse_look(event):
 	# Mouse look controls, don't activate if camera is unset
 	if look_enabled and can_move and camera:
 		if event is InputEventMouseMotion:
-			rotate_y(deg_to_rad(-event.relative.x * sensitivity.x))
-			camera.rotate_x(deg_to_rad(-event.relative.y * sensitivity.y))
+			rotate_y(deg_to_rad(-event.relative.x * sensitivity.y))
+			camera.rotate_x(deg_to_rad(-event.relative.y * sensitivity.x))
 			camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-89), deg_to_rad(89))
 
 ## Get player's intended direction. (0,0) if movement disabled
@@ -223,6 +223,3 @@ func _ready():
 	update_mouse_mode()
 	died.connect(die)
 	GameManager.player = self
-
-func update_fov(fov):
-	camera.fov = fov
