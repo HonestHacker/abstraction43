@@ -7,7 +7,6 @@ signal load_game_pressed(filename: String)
 @export var main_menu_background : TextureRect
 @export var pause_menu_background : ColorRect
 @export var load_game_window : Window
-var settings_scene = preload("res://scenes/UI/Settings.tscn")
 
 @onready var is_pause_menu := false :
 	set(value):
@@ -41,14 +40,6 @@ func _on_load_game_pressed() -> void:
 func _on_quit_pressed() -> void:
 	get_tree().quit()
 
-func _on_settings_pressed() -> void:
-	$ButtonContainer.hide()
-	var settings_instance = settings_scene.instantiate()
-	add_child(settings_instance)
-	settings_instance.tree_exited.connect(_on_settings_closed)
-
-func _on_settings_closed() -> void:
-	$ButtonContainer.show()
 
 func _on_save_game_pressed() -> void:
 	SaveloadManager.save("%s.sav" % Time.get_datetime_string_from_system().validate_filename())

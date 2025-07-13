@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=4 uid="uid://d1ux837plp8ix"]
+[gd_scene load_steps=38 format=4 uid="uid://d1ux837plp8ix"]
 
 [ext_resource type="Script" uid="uid://bc7w6ggmke5kb" path="res://addons/func_godot/src/map/func_godot_map.gd" id="1_vow2j"]
 [ext_resource type="Resource" uid="uid://bkhxcqsquw1yg" path="res://addons/func_godot/func_godot_default_map_settings.tres" id="2_fr77v"]
@@ -14,6 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://d0vw6bgconrku" path="res://scenes/entities/item_action_dash.tscn" id="12_wmg5x"]
 [ext_resource type="PackedScene" uid="uid://deyx1obdd2en3" path="res://scenes/entities/prop_floor_button.tscn" id="13_ej34b"]
 [ext_resource type="PackedScene" uid="uid://b3l1o3g83xvqp" path="res://scenes/entities/item_action_gravityinversion.tscn" id="14_o0uhw"]
+[ext_resource type="PackedScene" uid="uid://dxe4ku5bk8w0m" path="res://scenes/entities/item_action_cube_creation.tscn" id="15_2oq4h"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_5rj2m"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -267,3 +268,8 @@ transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.0937
 
 [node name="entity_9_item_action_gravityinversion" parent="FuncGodotMap" instance=ExtResource("14_o0uhw")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.09375, 1.40625, -6.40625)
+
+[node name="ItemActionCubeCreation" parent="." instance=ExtResource("15_2oq4h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.66898, 1.83862, -2.58527)
+
+[editable path="FuncGodotMap/entity_1_player"]

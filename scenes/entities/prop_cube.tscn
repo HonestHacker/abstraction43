@@ -22,3 +22,5 @@ properties = Dictionary[NodePath, PackedStringArray]({
 NodePath(".."): PackedStringArray("position", "rotation", "linear_velocity", "angular_velocity")
 })
 metadata/_custom_type_script = "uid://byyhcsligsyg2"
+
+[editable path="cube"]
