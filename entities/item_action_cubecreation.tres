@@ -12,8 +12,8 @@ generate_size_property = false
 generate_gd_ignore_file = false
 scene_file = ExtResource("1_4teb6")
 apply_rotation_on_map_build = true
-classname = "item_action_superjump"
-description = "The superjump action."
+classname = "item_action_cubecreation"
+description = "The materialization (cube creation) action."
 func_godot_internal = false
 base_classes = Array[Resource]([])
 class_properties = {}
@@ -21,7 +21,7 @@ class_property_descriptions = {}
 meta_properties = {
 "color": Color(0.8, 0.8, 0.8, 1),
 "size": AABB(-13, -13, -13, 13, 13, 13),
-"studio": "\"tb/models/item_action_superjump.glb\""
+"studio": "\"tb/models/item_action_cubecreation.glb\""
 }
 node_class = ""
 name_property = ""

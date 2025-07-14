@@ -28,4 +28,4 @@ export_file = false
 target_map_editor = 1
 fgd_name = "Abstraction"
 base_fgd_files = Array[Resource]([ExtResource("1_umx6p"), ExtResource("2_1nqgu")])
-entity_definitions = Array[Resource]([ExtResource("2_yk2ar"), ExtResource("3_aj53i"), ExtResource("2_jhwnm"), ExtResource("3_egr4m"), ExtResource("4_1k5nh"), ExtResource("5_h6bar"), ExtResource("6_65nua"), ExtResource("7_aei17"), ExtResource("11_yxqw5"), ExtResource("8_8vtcg"), ExtResource("12_lk5yn"), ExtResource("13_shniv"), ExtResource("14_4baut"), ExtResource("15_jiqgp"), ExtResource("16_jiqgp"), ExtResource("18_dbpg5"), ExtResource("19_nv084"), ExtResource("20_7f1g7")])
+entity_definitions = Array[Resource]([ExtResource("2_yk2ar"), ExtResource("3_aj53i"), ExtResource("2_jhwnm"), ExtResource("3_egr4m"), ExtResource("4_1k5nh"), ExtResource("5_h6bar"), ExtResource("6_65nua"), ExtResource("7_aei17"), ExtResource("11_yxqw5"), ExtResource("20_7f1g7"), ExtResource("8_8vtcg"), ExtResource("12_lk5yn"), ExtResource("13_shniv"), ExtResource("14_4baut"), ExtResource("15_jiqgp"), ExtResource("16_jiqgp"), ExtResource("18_dbpg5"), ExtResource("19_nv084")])
