@@ -266,3 +266,8 @@
 "classname" "item_action_gravityinversion"
 "origin" "-205 163 45"
 }
+// entity 10
+{
+"classname" "item_action_cubecreation"
+"origin" "-45 131 61"
+}
