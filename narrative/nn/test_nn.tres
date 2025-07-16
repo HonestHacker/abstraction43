@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Sentence" load_steps=3 format=3 uid="uid://b8vncdy0n2fyr"]
+
+[ext_resource type="Script" uid="uid://dpytbhschjcpe" path="res://scripts/narrative/sentence.gd" id="1_8fvcs"]
+[ext_resource type="AudioStream" uid="uid://6s6dwkwvef43" path="res://sounds/nn/test_nn.ogg" id="1_lvsr2"]
+
+[resource]
+script = ExtResource("1_8fvcs")
+audio_stream = ExtResource("1_lvsr2")
+subtitles = "Cleverly done, Mr. Freeman, but you're not supposed to be here. As a matter of fact, you're not. Get back where you belong, and forget about all this, until we meet again."
+metadata/_custom_type_script = "uid://dpytbhschjcpe"

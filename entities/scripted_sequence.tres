@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="FuncGodotFGDPointClass" load_steps=4 format=3 uid="uid://b0sh1c0p6nq81"]
+
+[ext_resource type="Resource" uid="uid://dnjwu7nudj2iu" path="res://entities/base/io.tres" id="1_bweim"]
+[ext_resource type="Script" uid="uid://c4xc207ilaefw" path="res://addons/func_godot/src/fgd/func_godot_fgd_point_class.gd" id="2_3n5gd"]
+[ext_resource type="Script" uid="uid://calgsbjg84lv2" path="res://scripts/entities/scripted/scripted_sequence.gd" id="3_bweim"]
+
+[resource]
+script = ExtResource("2_3n5gd")
+script_class = ExtResource("3_bweim")
+apply_rotation_on_map_build = true
+classname = "scripted_sequence"
+description = "This entity allows you to make a NPC do something."
+func_godot_internal = false
+base_classes = Array[Resource]([ExtResource("1_bweim")])
+class_properties = {
+"actorname": "",
+"animation": "idle01",
+"movement_type": {
+"Looking": 1,
+"No": 0,
+"Teleporting": 3,
+"Walking": 2
+}
+}
+class_property_descriptions = {
+"actorname": "This is the targetname of the NPC that says the sentence.",
+"animation": "The name of the animation.",
+"movement_type": "Sets how the NPC moves performing the animation."
+}
+meta_properties = {
+"color": Color(1, 0, 1, 1),
+"size": AABB(-16, -16, -36, 16, 16, 36)
+}
+node_class = "Node3D"
+name_property = ""
+metadata/_custom_type_script = "uid://c4xc207ilaefw"
