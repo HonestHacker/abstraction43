@@ -293,14 +293,29 @@ func_godot_properties = {
 "targetname": "nn"
 }
 
-[node name="entity_12_scripted_sequence" type="Node3D" parent="FuncGodotMap"]
+[node name="entity_12_scripted_sentence" type="Node3D" parent="FuncGodotMap"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.5, 1.125, 7)
+script = ExtResource("17_vy4r8")
+targetname = "test_sequence"
+target = "test_door"
+actorname = "nn"
+sentence = ExtResource("18_12e2x")
+func_godot_properties = {
+"actorname": "nn",
+"classname": "scripted_sentence",
+"origin": "224 -80 36",
+"sentence": "res://narrative/nn/test_nn.tres",
+"target": "test_door",
+"targetname": "test_sequence"
+}
+
+[node name="entity_13_scripted_sequence" type="Node3D" parent="FuncGodotMap"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.75, 1.125, 2.5)
 script = ExtResource("19_12e2x")
 targetname = "test_sequence"
 target = "test_sequence02"
 actorname = "nn"
 animation = "walk"
-movement_type = 2
 func_godot_properties = {
 "actorname": "nn",
 "animation": "walk",
@@ -311,54 +326,35 @@ func_godot_properties = {
 "targetname": "test_sequence"
 }
 
-[node name="entity_13_scripted_sequence" type="Node3D" parent="FuncGodotMap"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.5, 1.125, 2.5)
+[node name="entity_14_scripted_sequence" type="Node3D" parent="FuncGodotMap"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.25, 1.125, 2.5)
 script = ExtResource("19_12e2x")
 targetname = "test_sequence02"
 target = "test_sequence03"
 actorname = "nn"
 animation = "walk"
-movement_type = 2
 func_godot_properties = {
 "actorname": "nn",
 "animation": "walk",
 "classname": "scripted_sequence",
 "movement_type": "2",
-"origin": "80 -112 36",
+"origin": "80 -104 36",
 "target": "test_sequence03",
 "targetname": "test_sequence02"
 }
 
-[node name="entity_14_scripted_sequence" type="Node3D" parent="FuncGodotMap"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.5, 1.125, 4.5)
+[node name="entity_15_scripted_sequence" type="Node3D" parent="FuncGodotMap"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.25, 1.125, 4.75)
 script = ExtResource("19_12e2x")
 targetname = "test_sequence03"
-target = "test_sentence"
 actorname = "nn"
 animation = "idlebrush"
-movement_type = 1
 func_godot_properties = {
 "actorname": "nn",
 "animation": "idlebrush",
 "classname": "scripted_sequence",
 "movement_type": "1",
-"origin": "144 -112 36",
-"target": "test_sentence",
+"origin": "152 -104 36",
+"target": "",
 "targetname": "test_sequence03"
-}
-
-[node name="entity_15_scripted_sentence" type="Node3D" parent="FuncGodotMap"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 1.125, 8.25)
-script = ExtResource("17_vy4r8")
-targetname = "test_sentence"
-target = "test_door"
-actorname = "nn"
-sentence = ExtResource("18_12e2x")
-func_godot_properties = {
-"actorname": "nn",
-"classname": "scripted_sentence",
-"origin": "264 0 36",
-"sentence": "res://narrative/nn/test_nn.tres",
-"target": "test_door",
-"targetname": "test_sentence"
 }
