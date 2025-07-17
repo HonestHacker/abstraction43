@@ -21,6 +21,10 @@ GameManager="*res://scripts/singletons/game_manager.gd"
 SaveloadManager="*res://scripts/singletons/saveload_manager.gd"
 Panku="*res://addons/panku_console/console.tscn"
 
+[display]
+
+window/vsync/vsync_mode=0
+
 [dotnet]
 
 project/assembly_name="Abstraction-main"

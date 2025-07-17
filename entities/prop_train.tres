@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="FuncGodotFGDModelPointClass" load_steps=4 format=3 uid="uid://ck4s8alqxyrbg"]
+
+[ext_resource type="Resource" uid="uid://dnjwu7nudj2iu" path="res://entities/base/io.tres" id="1_67t64"]
+[ext_resource type="PackedScene" uid="uid://ha8i5h0jc2px" path="res://scenes/entities/prop_train.tscn" id="2_67t64"]
+[ext_resource type="Script" uid="uid://dxdfb8rtps08f" path="res://addons/func_godot/src/fgd/func_godot_fgd_model_point_class.gd" id="3_vdwi3"]
+
+[resource]
+script = ExtResource("3_vdwi3")
+target_map_editor = 0
+models_sub_folder = ""
+scale_expression = ""
+generate_size_property = true
+generate_gd_ignore_file = false
+scene_file = ExtResource("2_67t64")
+apply_rotation_on_map_build = true
+classname = "prop_train"
+description = "A train"
+func_godot_internal = false
+base_classes = Array[Resource]([ExtResource("1_67t64")])
+class_properties = {
+"velocity": Vector3(0, 0, -10)
+}
+class_property_descriptions = {
+"velocity": "The velocity of the train"
+}
+meta_properties = {
+"color": Color(0.8, 0.8, 0.8, 1),
+"size": AABB(-7, -3, -3, 7, 3, 3),
+"studio": "\"tb/models/prop_train.glb\""
+}
+node_class = ""
+name_property = ""
+metadata/_custom_type_script = "uid://dxdfb8rtps08f"
