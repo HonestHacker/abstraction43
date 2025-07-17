@@ -1,0 +1,19 @@
+[gd_resource type="StandardMaterial3D" load_steps=6 format=3 uid="uid://rhabnn0pmtuw"]
+
+[ext_resource type="Texture2D" uid="uid://crdpc127cm517" path="res://textures/plate008d/DiamondPlate008D_1K-JPG_Color.jpg" id="1_mfmos"]
+[ext_resource type="Texture2D" uid="uid://bxbwfk3lsh6a3" path="res://textures/plate008d/DiamondPlate008D_1K-JPG_AmbientOcclusion.jpg" id="2_moc4b"]
+[ext_resource type="Texture2D" uid="uid://d0co0475qrcun" path="res://textures/plate008d/DiamondPlate008D_1K-JPG_Metalness.jpg" id="3_l4v4j"]
+[ext_resource type="Texture2D" uid="uid://bb6qwwyceba0y" path="res://textures/plate008d/DiamondPlate008D_1K-JPG_NormalGL.jpg" id="4_nomk2"]
+[ext_resource type="Texture2D" uid="uid://60acvmeba1ar" path="res://textures/plate008d/DiamondPlate008D_1K-JPG_Roughness.jpg" id="5_05gel"]
+
+[resource]
+albedo_texture = ExtResource("1_mfmos")
+metallic = 1.0
+metallic_specular = 0.7
+metallic_texture = ExtResource("3_l4v4j")
+roughness_texture = ExtResource("5_05gel")
+normal_enabled = true
+normal_texture = ExtResource("4_nomk2")
+ao_enabled = true
+ao_texture = ExtResource("2_moc4b")
+texture_filter = 2

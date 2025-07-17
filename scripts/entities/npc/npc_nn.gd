@@ -31,10 +31,7 @@ var current_sequence_name: String = ""
 var current_sentence_name: String = ""
 var in_sequence := false 
 
-func face_at(target: Vector3) -> void:
-	look_at(target, Vector3.UP, true)
-	rotation.x = 0
-	rotation.z = 0
+
 
 var moving_to_target: bool = false :
 	set(value):
@@ -43,7 +40,12 @@ var moving_to_target: bool = false :
 			animation_player.play("idle01")
 var movement_target: Vector3 = Vector3.ZERO
 
-func emit_current_sequence_finished():
+func face_at(target: Vector3) -> void:
+	look_at(target, Vector3.UP, true)
+	rotation.x = 0
+	rotation.z = 0
+
+func emit_current_sequence_finished(_anim):
 	sequence_finished.emit(current_sequence_name)
 
 func _ready() -> void:
