@@ -1,4 +1,4 @@
-[gd_scene load_steps=457 format=4 uid="uid://iadptmadrpxg"]
+[gd_scene load_steps=459 format=4 uid="uid://iadptmadrpxg"]
 
 [ext_resource type="Script" uid="uid://bc7w6ggmke5kb" path="res://addons/func_godot/src/map/func_godot_map.gd" id="1_4pxky"]
 [ext_resource type="Resource" uid="uid://bkhxcqsquw1yg" path="res://addons/func_godot/func_godot_default_map_settings.tres" id="2_8efae"]
@@ -1907,6 +1907,24 @@ indices = PackedInt32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_wf37t"]
 points = PackedVector3Array(-0.125, 1.5, -1.5, -0.125, -1.5, -1.5, 0.125, -1.5, -1.5, 0.125, 1.5, -1.5, -0.125, 1.5, 0, -0.125, -1.5, 0, 0.125, -1.5, 0, 0.125, 1.5, 0)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ky23d"]
+_surfaces = [{
+"aabb": AABB(-0.5, -1, -1, 1, 2, 2),
+"attribute_data": PackedByteArray("AAAlQAAAjL8AACVAAACEvwAAI0AAAIS/AAAjQAAAjL8AACRAAACMvwAAKEAAAIy/AAAoQAAAhL8AACRAAACEvwAAJMAAACNAAAAkwAAAJUAAACjAAAAlQAAAKMAAACNAAAAkQAAAI0AAAChAAAAjQAAAKEAAACVAAAAkQAAAJUAAACTAAACMvwAAJMAAAIS/AAAowAAAhL8AACjAAACMvwAAJcAAAIy/AAAjwAAAjL8AACPAAACEvwAAJcAAAIS/"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAACAAMABAAFAAYABAAGAAcACAAJAAoACAAKAAsADAANAA4ADAAOAA8AEAARABIAEAASABMAFAAVABYAFAAWABcA"),
+"material": ExtResource("13_nl401"),
+"name": "special/trigger",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAvwAAgD8AAIC/AAAAvwAAgL8AAIC/AAAAPwAAgL8AAIC/AAAAPwAAgD8AAIC/AAAAvwAAgD8AAIC/AAAAvwAAgD8AAIA/AAAAvwAAgL8AAIA/AAAAvwAAgL8AAIC/AAAAPwAAgL8AAIC/AAAAvwAAgL8AAIC/AAAAvwAAgL8AAIA/AAAAPwAAgL8AAIA/AAAAPwAAgD8AAIC/AAAAPwAAgD8AAIA/AAAAvwAAgD8AAIA/AAAAvwAAgD8AAIC/AAAAPwAAgD8AAIC/AAAAPwAAgL8AAIC/AAAAPwAAgL8AAIA/AAAAPwAAgD8AAIA/AAAAvwAAgD8AAIA/AAAAPwAAgD8AAIA/AAAAPwAAgL8AAIA/AAAAvwAAgL8AAIA//////wAA/7//////AAD/v/////8AAP+//////wAA/78AAP9//3//vwAA/3//f/+/AAD/f/9//78AAP9//3//v/9/AAD//////38AAP//////fwAA//////9/AAD//////3////9//7//f////3//v/9/////f/+//3////9//7////9//////////3//////////f/////////9///////9//3////+//3//f////7//f/9/////v/9//3////+/")
+}]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_perkt"]
+points = PackedVector3Array(-0.5, 1, -1, -0.5, -1, -1, 0.5, -1, -1, 0.5, 1, -1, -0.5, 1, 1, -0.5, -1, 1, 0.5, -1, 1, 0.5, 1, 1)
 
 [node name="Map" type="Node3D"]
 
@@ -4008,6 +4026,7 @@ shape = SubResource("ConcavePolygonShape3D_5l8f2")
 [node name="entity_107_npc_nn" parent="FuncGodotMap" instance=ExtResource("31_lqd8l")]
 transform = Transform3D(1.39071e-07, 0, 1, 0, 1, 0, -1, 0, 1.39071e-07, 23, -0.875, 3.75)
 targetname = "nn"
+rotation_speed = null
 func_godot_properties = {
 "angle": "270",
 "classname": "npc_nn",
@@ -4188,6 +4207,36 @@ func_godot_properties = {
 "target": "train",
 "targetname": "train_timer2",
 "time": 2.0
+}
+
+[node name="entity_120_trigger_area" type="Area3D" parent="FuncGodotMap"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82, 34, 83)
+script = ExtResource("12_8t6ts")
+target = "elevator02_limiter03"
+func_godot_properties = {
+"classname": "trigger_area",
+"target": "elevator02_limiter03",
+"targetname": ""
+}
+
+[node name="entity_120_mesh_instance" type="MeshInstance3D" parent="FuncGodotMap/entity_120_trigger_area"]
+mesh = SubResource("ArrayMesh_ky23d")
+
+[node name="entity_120_brush_0_collision_shape" type="CollisionShape3D" parent="FuncGodotMap/entity_120_trigger_area"]
+shape = SubResource("ConvexPolygonShape3D_perkt")
+
+[node name="entity_121_logic_limiter" type="Node3D" parent="FuncGodotMap"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -83.75, 33.75, 82.25)
+script = ExtResource("14_4oyc1")
+targetname = "elevator02_limiter03"
+target = "elevator02"
+limit = 1
+func_godot_properties = {
+"classname": "logic_limiter",
+"limit": 1,
+"origin": "2632 -2680 1080",
+"target": "elevator02",
+"targetname": "elevator02_limiter03"
 }
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]

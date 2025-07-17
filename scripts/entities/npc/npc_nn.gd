@@ -17,6 +17,7 @@ enum MovementType {
 @export var animation_player: AnimationPlayer
 @export var audio_stream_player: AudioStreamPlayer3D
 @export var speed: float
+@export var rotation_speed: float = 5.0  # Radians per second for smooth rotation
 
 @export var func_godot_properties: Dictionary :
 	set(value):
@@ -31,8 +32,6 @@ var current_sequence_name: String = ""
 var current_sentence_name: String = ""
 var in_sequence := false 
 
-
-
 var moving_to_target: bool = false :
 	set(value):
 		moving_to_target = value
@@ -40,10 +39,17 @@ var moving_to_target: bool = false :
 			animation_player.play("idle01")
 var movement_target: Vector3 = Vector3.ZERO
 
+# Smooth rotation variables
+var rotating_to_target: bool = false
+var rotation_target: Vector3 = Vector3.ZERO
+var rotation_threshold: float = 0.01  # Angle threshold in radians to consider rotation complete
+
 func face_at(target: Vector3) -> void:
-	look_at(target, Vector3.UP, true)
-	rotation.x = 0
-	rotation.z = 0
+	#look_at(target, Vector3.UP, true)
+	#rotation.x = 0
+	#rotation.z = 0
+	rotation_target = target
+	rotating_to_target = true
 
 func emit_current_sequence_finished(_anim):
 	sequence_finished.emit(current_sequence_name)
@@ -97,6 +103,22 @@ func play_sentence(sentence_name: String, sentence: Sentence) -> void:
 			subtitles.show_text(sentence.subtitles, sentence.audio_stream.get_length() + 5.0)
 
 func _physics_process(delta: float) -> void:
+	if rotating_to_target:
+		var direction = (rotation_target - global_position).normalized()
+		direction.y = 0  # Only consider horizontal direction
+		
+		if direction.length() > 0:
+			var target_rotation = atan2(direction.x, direction.z)
+			var angle_diff = wrapf(target_rotation - rotation.y, -PI, PI)
+			
+			if abs(angle_diff) > rotation_threshold:
+				var rotate_amount = sign(angle_diff) * min(rotation_speed * delta, abs(angle_diff))
+				rotate_y(rotate_amount)
+			else:
+				# Rotation complete
+				rotating_to_target = false
+				if current_sequence_name != "" && !moving_to_target:
+					sequence_finished.emit(current_sequence_name)
 	if moving_to_target:
 		var direction = movement_target - global_position
 		var distance = direction.length()

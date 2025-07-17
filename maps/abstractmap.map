@@ -4612,3 +4612,24 @@
 "target" "train"
 "time" "2"
 }
+// entity 123
+{
+"classname" "trigger_area"
+"target" "elevator02_limiter03"
+// brush 0
+{
+( 2624 -2640 1104 ) ( 2624 -2639 1104 ) ( 2624 -2640 1105 ) special/trigger [ 0 -1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 2624 -2640 1104 ) ( 2624 -2640 1105 ) ( 2625 -2640 1104 ) special/trigger [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 2624 -2640 1056 ) ( 2625 -2640 1056 ) ( 2624 -2639 1056 ) special/trigger [ -1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 2688 -2608 1120 ) ( 2688 -2607 1120 ) ( 2689 -2608 1120 ) special/trigger [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 2688 -2608 1120 ) ( 2689 -2608 1120 ) ( 2688 -2608 1121 ) special/trigger [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 2688 -2608 1120 ) ( 2688 -2608 1121 ) ( 2688 -2607 1120 ) special/trigger [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+}
+// entity 124
+{
+"classname" "logic_limiter"
+"origin" "2632 -2680 1080"
+"target" "elevator02"
+"targetname" "elevator02_limiter03"
+}
