@@ -3,12 +3,16 @@ class_name Subtitles
 
 @export var label : RichTextLabel
 
+var tween: Tween
+
 func _ready() -> void:
 	add_to_group("subtitles")
 
 func show_text(text: String, fade_time: float) -> void:
 	modulate.a = 1.0
 	label.text = text
-	var tween = create_tween()
+	if tween:
+		tween.kill()
+	tween = create_tween()
 	tween.set_trans(Tween.TRANS_CIRC)
 	tween.tween_property(self, "modulate:a", 0.0, fade_time)

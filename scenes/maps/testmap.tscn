@@ -285,7 +285,6 @@ transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.0937
 [node name="entity_11_npc_nn" parent="FuncGodotMap" instance=ExtResource("16_wuwdp")]
 transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -0.75, 1.125, 1.5)
 targetname = "nn"
-rotation_speed = null
 func_godot_properties = {
 "angle": "180",
 "classname": "npc_nn",
