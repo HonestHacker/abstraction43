@@ -77,6 +77,8 @@ var can_move : bool = true :
 var gravity_scale: float = 1.0
 var is_flipping: bool = false
 
+var should_jump := false
+
 # Health variables
 var hp := max_hp :
 	set(value):
@@ -163,9 +165,10 @@ func get_next_velocity(previousVelocity, delta):
 	velocity += Vector3.DOWN * get_player_gravity(delta)
 	
 	# Apply jump if desired
-	if (Input.is_action_pressed(jump) if jump_when_held else Input.is_action_just_pressed(jump)) \
+	if (Input.is_action_pressed(jump) if jump_when_held else Input.is_action_just_pressed(jump) or should_jump) \
 			and can_move and can_jump:
 		velocity.y = get_jump()
+		should_jump = false
 	
 	# Return the new velocity
 	return velocity
