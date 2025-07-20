@@ -23,6 +23,7 @@ Panku="*res://addons/panku_console/console.tscn"
 
 [display]
 
+window/size/mode=3
 window/vsync/vsync_mode=0
 
 [dotnet]
