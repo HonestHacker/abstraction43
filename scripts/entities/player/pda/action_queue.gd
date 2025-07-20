@@ -16,7 +16,7 @@ class_name ActionQueue
 
 func push(action: Action) -> void:
 	add_child(action)
-	var action_texture = TextureRect.new()
+	var action_texture = ActionTextureRect.new()
 	action_texture.texture = action.icon
 	pda.hud.actions.add_child(action_texture)
 

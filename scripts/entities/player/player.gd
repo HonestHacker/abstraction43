@@ -18,7 +18,9 @@ signal died
 
 @export_category("Input Definitions")
 ## Mouse sensitivity multiplier
-@export var sensitivity : Vector2 = Vector2.ONE
+@export var sensitivity : Vector2 = Vector2.ONE :
+	get:
+		return Vector2(sensitivity.x, sensitivity.y * gravity_scale)
 ## Movement actions
 @export var move_forward : String
 @export var move_backward : String
