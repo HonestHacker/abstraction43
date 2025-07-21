@@ -2,11 +2,12 @@ extends Control
 class_name Subtitles
 
 @export var label : RichTextLabel
+@export var type : String = "subtitles"
 
 var tween: Tween
 
 func _ready() -> void:
-	add_to_group("subtitles")
+	add_to_group(type)
 
 func show_text(text: String, fade_time: float) -> void:
 	modulate.a = 1.0
