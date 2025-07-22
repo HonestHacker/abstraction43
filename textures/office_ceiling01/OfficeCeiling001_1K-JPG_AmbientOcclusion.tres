@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bgtw57d76ma7x"]
+
+[ext_resource type="Texture2D" uid="uid://d0rfnfj3qe6dd" path="res://textures/office_ceiling01/OfficeCeiling001_1K-JPG_AmbientOcclusion.jpg" id="1_s3tgj"]
+
+[resource]
+albedo_texture = ExtResource("1_s3tgj")
+metallic_specular = 0.0
+texture_filter = 2
