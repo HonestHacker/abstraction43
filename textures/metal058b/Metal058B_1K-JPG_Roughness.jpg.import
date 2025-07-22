@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0rfnfj3qe6dd"
-path.s3tc="res://.godot/imported/OfficeCeiling001_1K-JPG_AmbientOcclusion.jpg-501b8c2aced196406b0ffd751a5fadbe.s3tc.ctex"
+uid="uid://dgbutymp3n56t"
+path.s3tc="res://.godot/imported/Metal058B_1K-JPG_Roughness.jpg-a2d576700f8983a3a4f242bae6644556.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://textures/office_ceiling01/OfficeCeiling001_1K-JPG_AmbientOcclusion.jpg"
-dest_files=["res://.godot/imported/OfficeCeiling001_1K-JPG_AmbientOcclusion.jpg-501b8c2aced196406b0ffd751a5fadbe.s3tc.ctex"]
+source_file="res://textures/metal058b/Metal058B_1K-JPG_Roughness.jpg"
+dest_files=["res://.godot/imported/Metal058B_1K-JPG_Roughness.jpg-a2d576700f8983a3a4f242bae6644556.s3tc.ctex"]
 
 [params]
 
