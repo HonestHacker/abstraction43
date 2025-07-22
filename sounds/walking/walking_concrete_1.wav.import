@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cp2ja0rhfri8q"
-path="res://.godot/imported/walking_concrete_1.wav-687631298238d99fae045edfe8faae4c.sample"
+path="res://.godot/imported/walking_concrete_1.wav-46a0d2a9a36d77aa28816fbbb820f36f.sample"
 
 [deps]
 
-source_file="res://sounds/walking_concrete_1.wav"
-dest_files=["res://.godot/imported/walking_concrete_1.wav-687631298238d99fae045edfe8faae4c.sample"]
+source_file="res://sounds/walking/walking_concrete_1.wav"
+dest_files=["res://.godot/imported/walking_concrete_1.wav-46a0d2a9a36d77aa28816fbbb820f36f.sample"]
 
 [params]
 

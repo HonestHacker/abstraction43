@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cfso1r5c4cl0w"
-path="res://.godot/imported/walking_metal_1.wav-25b2ed0ff1e16ecf11eaed543c2da416.sample"
+path="res://.godot/imported/walking_metal_1.wav-31cff9533a3388924f17cd81d293e644.sample"
 
 [deps]
 
-source_file="res://sounds/walking_metal_1.wav"
-dest_files=["res://.godot/imported/walking_metal_1.wav-25b2ed0ff1e16ecf11eaed543c2da416.sample"]
+source_file="res://sounds/walking/walking_metal_1.wav"
+dest_files=["res://.godot/imported/walking_metal_1.wav-31cff9533a3388924f17cd81d293e644.sample"]
 
 [params]
 

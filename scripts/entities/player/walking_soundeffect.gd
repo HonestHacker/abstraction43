@@ -3,13 +3,16 @@ extends AudioStreamPlayer3D
 @onready var player: Player = $".."
 var footstep_sounds = {
 	"concrete": [
-		preload("res://sounds/walking_concrete_1.wav")
+		preload("res://sounds/walking/walking_concrete_1.wav")
 	],
 	"wood": [
-		preload("res://sounds/walking_wood_1.wav"),
+		preload("res://sounds/walking/walking_wood_1.wav"),
 	],
 	"metal": [
-		preload("res://sounds/walking_metal_1.wav"),
+		preload("res://sounds/walking/walking_metal_1.wav"),
+	],
+	"fabric": [
+		preload("res://sounds/walking/walking_fabric_1.wav")
 	]
 }
 
