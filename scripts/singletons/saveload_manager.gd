@@ -65,8 +65,34 @@ func restore(filename: String) -> void:
 	if data is not Dictionary:
 		push_error("Wrong format: %s" % filename)
 		return
-	for serializable: Serializable in get_tree().get_nodes_in_group("serializables"):
+	var serializables := get_tree().get_nodes_in_group("serializables")
+	var serializable_names := serializables.map(func(x): return x.name)
+	# Recreate serializables
+	
+	for serializable_name in data.keys():
+		#print(data[serializable_name])
+		#print(data[serializable_name].has(".."))
+		#print(data[serializable_name][".."].has("packed_scene_path"))
+		#print(data[serializable_name][".."].has("node_path"))
+		
+		if serializable_name not in serializable_names \
+			and data[serializable_name].has("..") \
+			and data[serializable_name][".."].has("packed_scene_path") \
+			and data[serializable_name][".."].has("node_path"):
+			var packed_scene: PackedScene = load(
+				str_to_var(data[serializable_name][".."]["packed_scene_path"])
+			)
+			var node_path: NodePath = NodePath(str_to_var(data[serializable_name][".."]["node_path"]))
+			var node = packed_scene.instantiate()
+			node.name = node_path.get_name(node_path.get_name_count() - 1)
+			get_node(node_path.slice(0, -1)).add_child(node)
+	serializables = get_tree().get_nodes_in_group("serializables")
+	# Restore all serializables
+	for serializable: Serializable in serializables:
 		if not data.has(serializable.name):
-			push_warning("Serializable data has not been found: %s" % serializable.name)
+			if serializable.remove_if_not_found:
+				serializable.get_parent().queue_free()
+			else:
+				push_warning("Serializable data has not been found: %s" % serializable.name)
 			continue
 		serializable.restore(data[serializable.name])

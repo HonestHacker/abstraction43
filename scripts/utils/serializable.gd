@@ -10,6 +10,7 @@ class_name Serializable
 ## Key: [NodePath] to target node.[br]
 ## Value: [PackedStringArray] of property names to track.[br]
 @export var properties: Dictionary[NodePath, PackedStringArray]
+@export var remove_if_not_found : bool = false
 
 func _ready() -> void:
 	name = get_parent().name + "Serializable"

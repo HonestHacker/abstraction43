@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://captrpfh2kp66"]
+
+[ext_resource type="Texture2D" uid="uid://cnfq84pyptcrg" path="res://textures/tiles2/Tiles002_1K-JPG_Displacement.jpg" id="1_b7ssr"]
+
+[resource]
+albedo_texture = ExtResource("1_b7ssr")
+metallic_specular = 0.0
+texture_filter = 2

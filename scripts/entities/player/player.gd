@@ -18,7 +18,9 @@ signal died
 
 @export_category("Input Definitions")
 ## Mouse sensitivity multiplier
-@export var sensitivity : Vector2 = Vector2.ONE
+@export var sensitivity : Vector2 = Vector2.ONE :
+	get:
+		return Vector2(sensitivity.x, sensitivity.y * gravity_scale)
 ## Movement actions
 @export var move_forward : String
 @export var move_backward : String
@@ -77,6 +79,8 @@ var can_move : bool = true :
 var gravity_scale: float = 1.0
 var is_flipping: bool = false
 
+var should_jump := false
+
 # Health variables
 var hp := max_hp :
 	set(value):
@@ -97,8 +101,8 @@ func mouse_look(event):
 	# Mouse look controls, don't activate if camera is unset
 	if look_enabled and can_move and camera:
 		if event is InputEventMouseMotion:
-			rotate_y(deg_to_rad(-event.relative.x * sensitivity.x))
-			camera.rotate_x(deg_to_rad(-event.relative.y * sensitivity.y))
+			rotate_y(deg_to_rad(-event.relative.x * sensitivity.y))
+			camera.rotate_x(deg_to_rad(-event.relative.y * sensitivity.x))
 			camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-89), deg_to_rad(89))
 
 ## Get player's intended direction. (0,0) if movement disabled
@@ -163,9 +167,10 @@ func get_next_velocity(previousVelocity, delta):
 	velocity += Vector3.DOWN * get_player_gravity(delta)
 	
 	# Apply jump if desired
-	if (Input.is_action_pressed(jump) if jump_when_held else Input.is_action_just_pressed(jump)) \
+	if (Input.is_action_pressed(jump) if jump_when_held else Input.is_action_just_pressed(jump) or should_jump) \
 			and can_move and can_jump:
 		velocity.y = get_jump()
+		should_jump = false
 	
 	# Return the new velocity
 	return velocity
@@ -223,6 +228,3 @@ func _ready():
 	update_mouse_mode()
 	died.connect(die)
 	GameManager.player = self
-
-func update_fov(fov):
-	camera.fov = fov
