@@ -395,6 +395,7 @@ _data = {
 [node name="Elevator" type="AnimatableBody3D" node_paths=PackedStringArray("animation_player")]
 script = ExtResource("1_8omwg")
 animation_player = NodePath("AnimationPlayer")
+metadata/ground_type = "metal"
 
 [node name="Cube" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.9876, 0, 0, 0, 1.6572, 0, 0, 0, 0.9876, 0, -0.2529, 0)
