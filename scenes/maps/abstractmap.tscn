@@ -7201,6 +7201,1086 @@ max_db = 2.0
 autoplay = true
 max_distance = 15.0
 
+[node name="lamp2_6" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -19.4874, -4.36456, 31.5221)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_6"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_6/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_6/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_7" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, -19.8026, -4.44504, 38.502)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_7"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_7/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_7/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_8" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -33.0278, 3.73585, 46.6867)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_8"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_8/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_8/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_9" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -33.0278, 3.73585, 57.8985)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_9"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_9/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_9/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_11" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -33.048, 4.52209, 63.9131)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_11"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_11/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_11/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_12" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -39.9183, 10.6015, 63.6736)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_12"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_12/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_12/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_13" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -31.7223, 9.75523, 61.0386)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_13"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_13/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_13/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_13"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_14" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -20.457, 9.75523, 61.0386)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_14"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_14/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_14/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_14"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_15" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -20.457, 22.8416, 61.0386)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_15"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_15/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_15/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_15"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_17" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -30.2383, 22.8416, 61.0386)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_17"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_17/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_17/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_17"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_18" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.9534, 23.8076, 63.7678)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_18"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_18/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_18/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_18"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_19" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -44.215, 23.8076, 69.4852)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_19"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_19/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_19/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_19"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_22" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -48.5485, 23.8076, 63.3725)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_22"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_22/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_22/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_22"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_23" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -48.5485, 23.8076, 74.4724)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_23"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_23/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_23/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_23"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_25" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -56.6121, 29.2657, 74.4724)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_25"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_25/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_25/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_25"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_26" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -60.0373, 29.2657, 57.5439)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_26"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_26/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_26/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_26"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_27" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -60.0373, 29.2657, 80.9575)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_27"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_27/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_27/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_27"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_28" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -82.9219, 29.2657, 80.9575)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_28"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_28/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_28/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_28"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_29" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -66.1783, 22.7167, 80.9575)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_29"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_29/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_29/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_29"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_30" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -76.7498, 22.7167, 80.9575)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_30"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_30/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_30/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_30"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_31" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -63.5432, 29.0639, 74.5163)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_31"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_31/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_31/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_31"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_32" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -63.5432, 29.0639, 57.5212)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_32"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_32/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_32/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_32"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_33" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -77.2896, 16.0917, 57.5212)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_33"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_33/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_33/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_33"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_34" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -77.2896, 16.0917, 74.478)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_34"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_34/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_34/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_34"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_36" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -65.02, 16.0917, 66.24)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_36"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_36/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_36/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_36"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_37" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -84.4682, 17.3745, 65.9659)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_37"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_37/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_37/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_37"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_38" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -94.1128, 15.2555, 85.4778)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_38"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_38/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_38/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_38"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_39" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -109.927, 33.2538, 88.9427)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_39"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_39/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_39/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_39"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_42" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -109.927, 33.2538, 76.9872)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_42"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_42/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_42/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_42"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_40" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -120.516, 33.2538, 88.9427)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_40"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_40/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_40/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_40"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_43" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -120.516, 33.2538, 77.0423)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_43"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_43/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_43/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_43"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_41" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -130.363, 33.2538, 88.9427)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_41"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_41/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_41/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_41"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_44" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -130.363, 33.2538, 77.0121)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_44"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_44/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_44/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_44"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_45" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -134.951, 34.7962, 82.9413)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_45"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_45/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_45/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_45"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_47" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -138.117, 34.7962, 77.0427)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_47"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_47/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_47/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_47"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_48" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -138.117, 34.7962, 88.9739)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_48"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_48/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_48/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_48"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_51" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -146.664, 19.7552, 88.9739)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_51"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_51/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_51/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_51"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_52" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -146.664, 19.7552, 77.0388)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_52"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_52/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_52/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_52"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_53" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -160.085, 19.7552, 88.9739)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_53"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_53/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_53/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_53"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_54" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -160.085, 19.7552, 77.0388)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_54"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_54/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_54/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_54"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_55" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -173.932, 19.7552, 88.9739)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_55"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_55/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_55/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_55"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_56" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -173.932, 19.7552, 77.0388)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_56"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_56/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_56/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_56"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_57" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -187.076, 19.7552, 88.9739)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_57"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_57/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_57/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_57"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_58" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -187.076, 19.7552, 77.0388)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_58"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_58/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_58/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_58"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_59" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -187.076, 64.5452, 88.9739)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_59"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_59/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_59/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_59"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_60" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -187.076, 64.5452, 77.0388)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_60"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_60/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_60/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_60"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_49" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -138.117, 47.1345, 88.9739)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_49"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_49/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_49/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_49"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_50" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -138.117, 47.1345, 77.0358)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_50"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_50/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_50/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_50"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_61" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -157.516, 47.1345, 88.9739)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_61"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_61/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_61/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_61"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_62" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -157.516, 47.1345, 77.0358)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_62"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_62/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_62/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_62"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_63" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -172.441, 47.1345, 88.9739)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_63"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_63/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_63/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_63"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_64" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -172.441, 47.1345, 77.0358)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_64"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_64/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_64/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_64"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_46" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -108.534, 34.7962, 82.9345)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_46"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_46/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_46/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_46"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_35" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -84.4641, 27.7283, 67.6991)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_35"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_35/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_35/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_35"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_24" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -39.4236, 14.0044, 74.4724)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_24"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_24/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_24/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_24"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_20" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -44.215, 23.8076, 38.5634)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_20"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_20/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_20/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_20"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_21" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -40.5098, 23.8076, 53.7449)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_21"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_21/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_21/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_65" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.4703, 23.8076, 53.7449)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_65"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_65/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_65/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_65"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_16" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -13.5258, 18.4991, 63.5997)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_16"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_16/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_16/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_16"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
+[node name="lamp2_10" parent="." instance=ExtResource("69_s3avr")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -33.0278, 3.73585, 34.6171)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lamp2_10"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamp2_10/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_rg1og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="lamp2_10/StaticBody3D"]
+transform = Transform3D(0.95255, 0, 0, 0, 1.45497, 0, 0, 0, 0.95255, -0.0659552, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_anxwx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lamp2_10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.190119, 0, 0)
+light_color = Color(0.623529, 0.929412, 0.843137, 1)
+light_energy = 2.0
+omni_range = 7.08653
+
 [editable path="lamp2"]
 [editable path="lamp2_2"]
 [editable path="lamp2_3"]
@@ -7218,3 +8298,63 @@ max_distance = 15.0
 [editable path="lamp_warm10"]
 [editable path="lamp_warm11"]
 [editable path="lamp_warm12"]
+[editable path="lamp2_6"]
+[editable path="lamp2_7"]
+[editable path="lamp2_8"]
+[editable path="lamp2_9"]
+[editable path="lamp2_11"]
+[editable path="lamp2_12"]
+[editable path="lamp2_13"]
+[editable path="lamp2_14"]
+[editable path="lamp2_15"]
+[editable path="lamp2_17"]
+[editable path="lamp2_18"]
+[editable path="lamp2_19"]
+[editable path="lamp2_22"]
+[editable path="lamp2_23"]
+[editable path="lamp2_25"]
+[editable path="lamp2_26"]
+[editable path="lamp2_27"]
+[editable path="lamp2_28"]
+[editable path="lamp2_29"]
+[editable path="lamp2_30"]
+[editable path="lamp2_31"]
+[editable path="lamp2_32"]
+[editable path="lamp2_33"]
+[editable path="lamp2_34"]
+[editable path="lamp2_36"]
+[editable path="lamp2_37"]
+[editable path="lamp2_38"]
+[editable path="lamp2_39"]
+[editable path="lamp2_42"]
+[editable path="lamp2_40"]
+[editable path="lamp2_43"]
+[editable path="lamp2_41"]
+[editable path="lamp2_44"]
+[editable path="lamp2_45"]
+[editable path="lamp2_47"]
+[editable path="lamp2_48"]
+[editable path="lamp2_51"]
+[editable path="lamp2_52"]
+[editable path="lamp2_53"]
+[editable path="lamp2_54"]
+[editable path="lamp2_55"]
+[editable path="lamp2_56"]
+[editable path="lamp2_57"]
+[editable path="lamp2_58"]
+[editable path="lamp2_59"]
+[editable path="lamp2_60"]
+[editable path="lamp2_49"]
+[editable path="lamp2_50"]
+[editable path="lamp2_61"]
+[editable path="lamp2_62"]
+[editable path="lamp2_63"]
+[editable path="lamp2_64"]
+[editable path="lamp2_46"]
+[editable path="lamp2_35"]
+[editable path="lamp2_24"]
+[editable path="lamp2_20"]
+[editable path="lamp2_21"]
+[editable path="lamp2_65"]
+[editable path="lamp2_16"]
+[editable path="lamp2_10"]
