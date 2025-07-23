@@ -1,4 +1,7 @@
 [gd_resource type="Environment" format=3 uid="uid://bqb8bvb17duxv"]
 
 [resource]
+sdfgi_enabled = true
+sdfgi_cascades = 1
+sdfgi_min_cell_size = 1.6
 glow_enabled = true
