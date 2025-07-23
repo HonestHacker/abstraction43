@@ -69,6 +69,10 @@ func _get_ground_type() -> String:
 	var result = get_world_3d().direct_space_state.intersect_ray(query)
 	if result:
 		var collider = result.collider
-		if collider and collider.has_meta("ground_type"):
+		if not collider:
+			return "concrete"
+		if collider.has_meta("ground_type"):
 			return collider.get_meta("ground_type")
+		elif "func_godot_properties" in collider and collider.func_godot_properties.has("ground_type"):
+			return collider.func_godot_properties.ground_type
 	return "concrete"

@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=4 uid="uid://6e0dcgptp8lq"]
+[gd_scene load_steps=15 format=4 uid="uid://6e0dcgptp8lq"]
 
 [ext_resource type="Script" uid="uid://m30fino0b43d" path="res://scripts/entities/player/player.gd" id="1_2e6ej"]
 [ext_resource type="Script" uid="uid://dlo6kr6oe5he" path="res://scripts/entities/player/use_ray.gd" id="3_nnckv"]
@@ -8,9 +8,8 @@
 [ext_resource type="Script" uid="uid://1s466soi00u5" path="res://scripts/ui/hud/pda_hud.gd" id="7_po8h8"]
 [ext_resource type="Script" uid="uid://byyhcsligsyg2" path="res://scripts/utils/serializable.gd" id="7_ss7kx"]
 [ext_resource type="Script" uid="uid://duvcra355udj0" path="res://scripts/entities/player/damage_indicator.gd" id="8_dnykm"]
-
-[ext_resource type="Script" uid="uid://dt7h48sm3lls5" path="res://scripts/entities/player/walking_soundeffect.gd" id="10_b6tgf"]
 [ext_resource type="Script" uid="uid://cx6tsk2rm0pe3" path="res://scripts/ui/subtitles.gd" id="9_c5rqy"]
+[ext_resource type="Script" uid="uid://dt7h48sm3lls5" path="res://scripts/entities/player/walking_soundeffect.gd" id="10_b6tgf"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sq03e"]
 height = 2.25
@@ -117,7 +116,6 @@ script = ExtResource("8_dnykm")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 
 [node name="DiedCameraPosition" type="Node3D" parent="."]
-
 
 [node name="walking_soundeffect" type="AudioStreamPlayer3D" parent="."]
 stream = SubResource("AudioStreamWAV_c5rqy")
