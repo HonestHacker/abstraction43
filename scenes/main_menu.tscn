@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://cgcm434dd0bh5"]
+[gd_scene load_steps=8 format=3 uid="uid://cgcm434dd0bh5"]
 
 [ext_resource type="Texture2D" uid="uid://ky7kg4dssf3l" path="res://textures/ui/main_menu/background1.png" id="1_l6cm7"]
 [ext_resource type="Script" uid="uid://p74yhdak6ec2" path="res://scripts/ui/main_menu.gd" id="1_wu84c"]
@@ -6,6 +6,7 @@
 [ext_resource type="Theme" uid="uid://crl6wp1g56s1w" path="res://ui_theme.tres" id="3_wu84c"]
 [ext_resource type="Script" uid="uid://cdr8trfg7hoxv" path="res://scripts/ui/load_game_window.gd" id="5_8ln24"]
 [ext_resource type="Script" uid="uid://bacvexd2s45ag" path="res://scripts/ui/loading_progress_window.gd" id="6_rtw2f"]
+[ext_resource type="Script" uid="uid://vulpf374ac7m" path="res://scripts/ui/settings.gd" id="7_oa1go"]
 
 [node name="main_menu" type="Control" node_paths=PackedStringArray("main_menu_background", "pause_menu_background", "load_game_window")]
 process_mode = 3
@@ -126,6 +127,37 @@ grow_horizontal = 2
 grow_vertical = 2
 rounded = true
 
+[node name="settings_window" type="Window" parent="."]
+initial_position = 2
+size = Vector2i(500, 275)
+visible = false
+script = ExtResource("7_oa1go")
+
+[node name="Resulotion" type="OptionButton" parent="settings_window"]
+offset_right = 220.0
+offset_bottom = 48.0
+
+[node name="FOV" type="LineEdit" parent="settings_window"]
+offset_top = 51.0
+offset_right = 220.0
+offset_bottom = 82.0
+
+[node name="Sensetivity" type="HSlider" parent="settings_window"]
+offset_top = 90.0
+offset_right = 219.0
+offset_bottom = 110.0
+
+[node name="Volume" type="HSlider" parent="settings_window"]
+offset_top = 110.0
+offset_right = 219.0
+offset_bottom = 126.0
+
+[node name="Back_Button" type="Button" parent="settings_window"]
+offset_top = 220.0
+offset_right = 219.0
+offset_bottom = 275.0
+text = "Back"
+
 [connection signal="new_game_started" from="." to="." method="_on_new_game_started"]
 [connection signal="pressed" from="ButtonContainer/NewGame" to="." method="_on_new_game_pressed"]
 [connection signal="pressed" from="ButtonContainer/SaveGame" to="." method="_on_save_game_pressed"]
@@ -133,3 +165,7 @@ rounded = true
 [connection signal="pressed" from="ButtonContainer/Quit" to="." method="_on_quit_pressed"]
 [connection signal="about_to_popup" from="LoadGameWindow" to="LoadGameWindow" method="_on_about_to_popup"]
 [connection signal="item_activated" from="LoadGameWindow/Saves" to="LoadGameWindow" method="_on_saves_item_activated"]
+[connection signal="close_requested" from="settings_window" to="." method="_on_settings_window_close_requested"]
+[connection signal="text_changed" from="settings_window/FOV" to="settings_window" method="_on_FOV_changed"]
+[connection signal="changed" from="settings_window/Sensetivity" to="settings_window" method="_on_Sensitivity_changed"]
+[connection signal="pressed" from="settings_window/Back_Button" to="." method="_on_settings_closed"]
