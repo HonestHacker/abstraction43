@@ -21,7 +21,7 @@ class_property_descriptions = {}
 meta_properties = {
 "color": Color(0.8, 0.8, 0.8, 1),
 "size": AABB(-13, -13, -13, 13, 13, 13),
-"studio": "\"tb/models/item_action_superjump.glb\""
+"studio": "\"tb/models/item_action_gravityinversion.glb\""
 }
 node_class = ""
 name_property = ""

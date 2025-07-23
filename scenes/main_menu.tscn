@@ -162,7 +162,6 @@ text = "Back"
 [connection signal="pressed" from="ButtonContainer/NewGame" to="." method="_on_new_game_pressed"]
 [connection signal="pressed" from="ButtonContainer/SaveGame" to="." method="_on_save_game_pressed"]
 [connection signal="pressed" from="ButtonContainer/LoadGame" to="." method="_on_load_game_pressed"]
-[connection signal="pressed" from="ButtonContainer/Settings" to="." method="_on_settings_pressed"]
 [connection signal="pressed" from="ButtonContainer/Quit" to="." method="_on_quit_pressed"]
 [connection signal="about_to_popup" from="LoadGameWindow" to="LoadGameWindow" method="_on_about_to_popup"]
 [connection signal="item_activated" from="LoadGameWindow/Saves" to="LoadGameWindow" method="_on_saves_item_activated"]

@@ -7,5 +7,6 @@ func _init() -> void:
 func do():
 	var wishdir = player.get_wishdir() 
 	if wishdir:
-		player.velocity = player.get_wishdir() * 25 + Vector3.UP * 5
+		await make_prejump()
+		player.velocity = player.get_wishdir() * 25 + Vector3.UP * 5 * player.gravity_scale
 		finished.emit()

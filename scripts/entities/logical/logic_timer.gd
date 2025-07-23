@@ -22,5 +22,5 @@ func _ready() -> void:
 		GameManager.set_targetname(self, targetname)
 
 func use(_activator: Node) -> void:
-	await get_tree().create_timer(time).timeout
+	await get_tree().create_timer(time, false).timeout
 	GameManager.use_targets(self)

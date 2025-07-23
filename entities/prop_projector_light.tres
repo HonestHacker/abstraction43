@@ -20,7 +20,8 @@ class_properties = {}
 class_property_descriptions = {}
 meta_properties = {
 "color": Color(0.8, 0.8, 0.8, 1),
-"size": AABB(-16, -16, -45, 16, 16, 45)
+"size": AABB(-16, -16, -45, 16, 16, 45),
+"studio": "\"tb/models/prop_projector_light.glb\""
 }
 node_class = ""
 name_property = ""

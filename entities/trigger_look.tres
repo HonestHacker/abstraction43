@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="FuncGodotFGDPointClass" load_steps=4 format=3 uid="uid://dspbk51swi6bh"]
+
+[ext_resource type="Resource" uid="uid://dnjwu7nudj2iu" path="res://entities/base/io.tres" id="1_xxpcx"]
+[ext_resource type="Script" uid="uid://c4xc207ilaefw" path="res://addons/func_godot/src/fgd/func_godot_fgd_point_class.gd" id="2_nyuyt"]
+[ext_resource type="Script" uid="uid://b2urrmq6k3rwq" path="res://scripts/entities/triggers/trigger_look.gd" id="3_xxpcx"]
+
+[resource]
+script = ExtResource("2_nyuyt")
+script_class = ExtResource("3_xxpcx")
+apply_rotation_on_map_build = true
+classname = "trigger_look"
+description = "This entity fires the target when it's seen"
+func_godot_internal = false
+base_classes = Array[Resource]([ExtResource("1_xxpcx")])
+class_properties = {
+"degrees_seen": 90.0
+}
+class_property_descriptions = {}
+meta_properties = {
+"color": Color(0.8, 0.8, 0.8, 1),
+"size": AABB(-8, -8, -8, 8, 8, 8)
+}
+node_class = ""
+name_property = ""
+metadata/_custom_type_script = "uid://c4xc207ilaefw"

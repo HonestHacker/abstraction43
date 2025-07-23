@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://dpef6206n1li0"]
+
+[ext_resource type="Texture2D" uid="uid://dxahvdxoh5qi7" path="res://textures/concrete030/Concrete030_1K-JPG_Color.jpg" id="1_tymxo"]
+[ext_resource type="Texture2D" uid="uid://d27adk7vuit2a" path="res://textures/concrete030/Concrete030_1K-JPG_NormalGL.jpg" id="2_4id6f"]
+
+[resource]
+albedo_texture = ExtResource("1_tymxo")
+metallic_specular = 0.0
+normal_enabled = true
+normal_texture = ExtResource("2_4id6f")
+texture_filter = 2

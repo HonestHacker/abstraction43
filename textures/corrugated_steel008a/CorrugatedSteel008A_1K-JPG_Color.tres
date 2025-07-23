@@ -1,0 +1,18 @@
+[gd_resource type="StandardMaterial3D" load_steps=6 format=3 uid="uid://ck76kjyeu0dhe"]
+
+[ext_resource type="Texture2D" uid="uid://c3xg0llxppgw5" path="res://textures/corrugated_steel008a/CorrugatedSteel008A_1K-JPG_Color.jpg" id="1_u1m65"]
+[ext_resource type="Texture2D" uid="uid://cla8wmptcgr27" path="res://textures/corrugated_steel008a/CorrugatedSteel008A_1K-JPG_Displacement.jpg" id="2_sndsc"]
+[ext_resource type="Texture2D" uid="uid://cnaw2pgq2463l" path="res://textures/corrugated_steel008a/CorrugatedSteel008A_1K-JPG_Metalness.jpg" id="3_jqttf"]
+[ext_resource type="Texture2D" uid="uid://dtwymp4wskwy3" path="res://textures/corrugated_steel008a/CorrugatedSteel008A_1K-JPG_NormalGL.jpg" id="4_gpx3s"]
+[ext_resource type="Texture2D" uid="uid://bypscwnun7w3x" path="res://textures/corrugated_steel008a/CorrugatedSteel008A_1K-JPG_Roughness.jpg" id="5_xqtpi"]
+
+[resource]
+albedo_texture = ExtResource("1_u1m65")
+metallic = 1.0
+metallic_texture = ExtResource("3_jqttf")
+roughness_texture = ExtResource("5_xqtpi")
+normal_enabled = true
+normal_texture = ExtResource("4_gpx3s")
+heightmap_enabled = true
+heightmap_texture = ExtResource("2_sndsc")
+texture_filter = 2

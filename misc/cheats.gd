@@ -1,0 +1,5 @@
+current.get_node("FuncGodotMap/entity_11_npc_nn").play_sequence("walk", current.get_node("FuncGodotMap/entity_1_player").global_position)
+current.get_node("FuncGodotMap/entity_11_npc_nn").play_sentence(load("res://sounds/nn/test_gman.ogg"))
+current.get_node("FuncGodotMap/entity_119_prop_train").use(null)
+current.get_node("FuncGodotMap/entity_112_func_door_rotating").use(null)
+current.get_node("Map/FuncGodotMap/entity_96_player/Tutorial").show_text("Left mouse click - Dash", 5.0)

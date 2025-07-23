@@ -8,7 +8,9 @@
 [ext_resource type="Script" uid="uid://1s466soi00u5" path="res://scripts/ui/hud/pda_hud.gd" id="7_po8h8"]
 [ext_resource type="Script" uid="uid://byyhcsligsyg2" path="res://scripts/utils/serializable.gd" id="7_ss7kx"]
 [ext_resource type="Script" uid="uid://duvcra355udj0" path="res://scripts/entities/player/damage_indicator.gd" id="8_dnykm"]
+
 [ext_resource type="Script" uid="uid://dt7h48sm3lls5" path="res://scripts/entities/player/walking_soundeffect.gd" id="10_b6tgf"]
+[ext_resource type="Script" uid="uid://cx6tsk2rm0pe3" path="res://scripts/ui/subtitles.gd" id="9_c5rqy"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sq03e"]
 height = 2.25
@@ -116,8 +118,88 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 
 [node name="DiedCameraPosition" type="Node3D" parent="."]
 
+
 [node name="walking_soundeffect" type="AudioStreamPlayer3D" parent="."]
 stream = SubResource("AudioStreamWAV_c5rqy")
 script = ExtResource("10_b6tgf")
+
+[node name="Subtitles" type="Control" parent="." node_paths=PackedStringArray("label")]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 3
+anchor_left = 0.231771
+anchor_top = 0.709877
+anchor_right = 0.768229
+anchor_bottom = 0.756173
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+script = ExtResource("9_c5rqy")
+label = NodePath("RichTextLabel")
+metadata/_edit_use_anchors_ = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Subtitles"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 24
+bbcode_enabled = true
+fit_content = true
+scroll_active = false
+
+[node name="ColorRect" type="ColorRect" parent="Subtitles/RichTextLabel"]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.552941)
+
+[node name="Tutorial" type="Control" parent="." node_paths=PackedStringArray("label")]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 3
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -324.0
+offset_top = -17.5
+offset_right = -47.0
+offset_bottom = 17.5
+grow_horizontal = 0
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("9_c5rqy")
+label = NodePath("RichTextLabel")
+type = "tutorial"
+metadata/_edit_use_anchors_ = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Tutorial"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/default_color = Color(1, 0.890196, 0, 1)
+theme_override_font_sizes/normal_font_size = 24
+bbcode_enabled = true
+fit_content = true
+scroll_active = false
+
+[node name="ColorRect" type="ColorRect" parent="Tutorial/RichTextLabel"]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.552941)
 
 [connection signal="body_exited" from="Camera/PickupArea" to="Camera/PickupArea" method="_on_body_exited"]

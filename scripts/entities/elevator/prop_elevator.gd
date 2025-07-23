@@ -1,14 +1,13 @@
 @tool
 extends AnimatableBody3D
 
-const DOOR_OPENNING_TIME = 0.8
 
 enum Direction {
 	DOWN,
 	UP
 }
 
-enum Action {
+enum State {
 	IDLING,
 	CLOSE,
 	OPEN,
@@ -43,12 +42,12 @@ func _ready() -> void:
 	if !Engine.is_editor_hint():
 		GameManager.set_targetname(self, targetname)
 		elevator_program =[
-			Action.IDLING,
-			Action.OPEN,
-			Action.CLOSE,
-			Action.MOVING_UP if direction == Direction.UP else Action.MOVING_DOWN,
-			Action.OPEN,
-			Action.CLOSE
+			State.IDLING,
+			State.OPEN,
+			State.CLOSE,
+			State.MOVING_UP if direction == Direction.UP else State.MOVING_DOWN,
+			State.OPEN,
+			State.CLOSE
 		]
 
 func idle():
@@ -70,15 +69,15 @@ func _physics_process(delta):
 	if Engine.is_editor_hint():
 		return
 	match elevator_program[idx]:
-		Action.IDLING:
+		State.IDLING:
 			idle()
-		Action.OPEN:
+		State.OPEN:
 			open()
-		Action.CLOSE:
+		State.CLOSE:
 			close()
-		Action.MOVING_UP:
+		State.MOVING_UP:
 			transform.origin.y += speed * delta
-		Action.MOVING_DOWN:
+		State.MOVING_DOWN:
 			transform.origin.y -= speed * delta
 
 func use(_activator: Node) -> void:
