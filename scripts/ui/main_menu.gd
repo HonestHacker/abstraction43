@@ -52,5 +52,6 @@ func _on_settings_closed() -> void:
 func _on_settings_window_close_requested() -> void:
 	$"settings_window".visible = false
 	$"ButtonContainer".visible = true
+
 func _on_save_game_pressed() -> void:
 	SaveloadManager.save("%s.sav" % Time.get_datetime_string_from_system().validate_filename())

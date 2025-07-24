@@ -7,8 +7,6 @@ signal died
 @export_category("Activity Controls")
 ## Whether the character is currently able to look around
 @export var look_enabled : bool = true : 
-	get:
-		return move_enabled
 	set(val): ## Automatically update the mouse mode when look_enabled changes
 		look_enabled = val
 		update_mouse_mode()
@@ -99,7 +97,7 @@ func update_mouse_mode():
 
 func mouse_look(event):
 	# Mouse look controls, don't activate if camera is unset
-	if look_enabled and can_move and camera:
+	if look_enabled and camera:
 		if event is InputEventMouseMotion:
 			rotate_y(deg_to_rad(-event.relative.x * sensitivity.y))
 			camera.rotate_x(deg_to_rad(-event.relative.y * sensitivity.x))

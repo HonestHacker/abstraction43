@@ -1,15 +1,15 @@
 extends Window
 
-@onready var FOV_Slider = $"FOV"
-@onready var Sensitivity_Slider = $"Sensetivity"
+@export var fov_slider : Slider
+@export var sensitivity_slider : Slider
 
 func _ready():
-	FOV_Slider.text_changed.connect(_on_FOV_changed)
-	Sensitivity_Slider.value_changed.connect(_on_Sensitivity_changed)
+	fov_slider.value_changed.connect(_on_FOV_changed)
+	sensitivity_slider.value_changed.connect(_on_Sensitivity_changed)
 
 func _on_FOV_changed(value):
 	if GameManager.player:
-		GameManager.player.update_fov(float(value))
+		GameManager.player.camera.fov = float(value)
 
 func _on_Sensitivity_changed(value):
 	if GameManager.player:
