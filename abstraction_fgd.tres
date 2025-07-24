@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="FuncGodotFGDFile" load_steps=31 format=3 uid="uid://dvlgp0wjg4ybv"]
+[gd_resource type="Resource" script_class="FuncGodotFGDFile" load_steps=32 format=3 uid="uid://dvlgp0wjg4ybv"]
 
 [ext_resource type="Script" uid="uid://c8e7u2tu1m4gx" path="res://addons/func_godot/src/fgd/func_godot_fgd_file.gd" id="1_u7liy"]
 [ext_resource type="Resource" uid="uid://crgpdahjaj" path="res://addons/func_godot/fgd/func_godot_fgd.tres" id="1_umx6p"]
@@ -30,6 +30,7 @@
 [ext_resource type="Resource" uid="uid://c5a2ah7js78t0" path="res://entities/trigger_tutorial_hint.tres" id="27_adkhu"]
 [ext_resource type="Resource" uid="uid://cxncktg8rw40k" path="res://entities/trigger_save.tres" id="28_wa5gf"]
 [ext_resource type="Resource" uid="uid://bjhq0durn5gcd" path="res://entities/point_magnetic.tres" id="29_ni1vk"]
+[ext_resource type="Resource" uid="uid://hpumac34ep6i" path="res://entities/fx_formulas.tres" id="30_sfda6"]
 
 [resource]
 script = ExtResource("1_u7liy")
@@ -37,4 +38,4 @@ export_file = false
 target_map_editor = 1
 fgd_name = "Abstraction"
 base_fgd_files = Array[Resource]([ExtResource("1_umx6p"), ExtResource("2_1nqgu")])
-entity_definitions = Array[Resource]([ExtResource("2_yk2ar"), ExtResource("3_aj53i"), ExtResource("2_jhwnm"), ExtResource("3_egr4m"), ExtResource("4_1k5nh"), ExtResource("5_h6bar"), ExtResource("6_65nua"), ExtResource("7_aei17"), ExtResource("11_yxqw5"), ExtResource("20_7f1g7"), ExtResource("8_8vtcg"), ExtResource("12_lk5yn"), ExtResource("13_shniv"), ExtResource("14_4baut"), ExtResource("15_jiqgp"), ExtResource("16_jiqgp"), ExtResource("18_dbpg5"), ExtResource("19_nv084"), ExtResource("21_bitov"), ExtResource("22_w0u2i"), ExtResource("23_u8kdj"), ExtResource("24_gidyj"), ExtResource("25_2lnbw"), ExtResource("26_4j46m"), ExtResource("27_adkhu"), ExtResource("28_wa5gf"), ExtResource("29_ni1vk")])
+entity_definitions = Array[Resource]([ExtResource("2_yk2ar"), ExtResource("3_aj53i"), ExtResource("2_jhwnm"), ExtResource("3_egr4m"), ExtResource("4_1k5nh"), ExtResource("5_h6bar"), ExtResource("6_65nua"), ExtResource("7_aei17"), ExtResource("11_yxqw5"), ExtResource("20_7f1g7"), ExtResource("8_8vtcg"), ExtResource("12_lk5yn"), ExtResource("13_shniv"), ExtResource("14_4baut"), ExtResource("15_jiqgp"), ExtResource("16_jiqgp"), ExtResource("18_dbpg5"), ExtResource("19_nv084"), ExtResource("21_bitov"), ExtResource("22_w0u2i"), ExtResource("23_u8kdj"), ExtResource("24_gidyj"), ExtResource("25_2lnbw"), ExtResource("26_4j46m"), ExtResource("27_adkhu"), ExtResource("28_wa5gf"), ExtResource("29_ni1vk"), ExtResource("30_sfda6")])

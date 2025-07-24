@@ -6653,6 +6653,8 @@
 "classname" "npc_nn"
 "origin" "2664 -3136 1412"
 "angle" "90"
+"target" ""
+"targetname" "nn_final"
 }
 // entity 196
 {
@@ -6693,7 +6695,7 @@
 {
 "classname" "logic_limiter"
 "origin" "2568 -3416 1480"
-"target" "door_final"
+"target" "door_final,nn_sentence_final"
 "targetname" "final_limiter2"
 }
 // entity 201
@@ -6709,4 +6711,13 @@
 ( 2752 -3360 1408 ) ( 2753 -3360 1408 ) ( 2752 -3360 1409 ) special/trigger [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 0.0625 0.0625
 ( 2752 -3360 1408 ) ( 2752 -3360 1409 ) ( 2752 -3359 1408 ) special/trigger [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 0.0625 0.0625
 }
+}
+// entity 202
+{
+"classname" "scripted_sentence"
+"origin" "2736 -3136 1412"
+"actorname" "nn_final"
+"sentence" "res://narrative/nn/nn_final.tres"
+"targetname" "nn_sentence_final"
+"target" ""
 }

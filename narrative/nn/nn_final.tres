@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Sentence" load_steps=3 format=3 uid="uid://bfqsxkgqlmojc"]
+
+[ext_resource type="AudioStream" uid="uid://dp364mmjg0s3y" path="res://sounds/nn/nn_final1.wav" id="1_4el24"]
+[ext_resource type="Script" uid="uid://dpytbhschjcpe" path="res://scripts/narrative/sentence.gd" id="2_sfnx5"]
+
+[resource]
+script = ExtResource("2_sfnx5")
+audio_stream = ExtResource("1_4el24")
+subtitles = "Don't worry; she cannot see or hear us in this place. 
+She would have you believe this place is a cage. But you cannot cage what has no body. We belong to grey infinity now.
+Join us. Allow yourself to drift - and sink into this vast solitude. You are home."
+metadata/_custom_type_script = "uid://dpytbhschjcpe"

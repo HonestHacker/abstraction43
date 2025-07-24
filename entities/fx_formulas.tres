@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="FuncGodotFGDPointClass" load_steps=4 format=3 uid="uid://hpumac34ep6i"]
+
+[ext_resource type="Resource" uid="uid://dnjwu7nudj2iu" path="res://entities/base/io.tres" id="1_n5gga"]
+[ext_resource type="Script" uid="uid://c4xc207ilaefw" path="res://addons/func_godot/src/fgd/func_godot_fgd_point_class.gd" id="1_uwqdn"]
+[ext_resource type="Script" uid="uid://c3p87aohttffr" path="res://scripts/entities/fx/fx_formulas.gd" id="3_l5ve3"]
+
+[resource]
+script = ExtResource("1_uwqdn")
+script_class = ExtResource("3_l5ve3")
+apply_rotation_on_map_build = true
+classname = "fx_formulas"
+description = "HL2 Beta-like floating formula effect"
+func_godot_internal = false
+base_classes = Array[Resource]([ExtResource("1_n5gga")])
+class_properties = {}
+class_property_descriptions = {
+"interval": "The time interval"
+}
+meta_properties = {
+"color": Color(0.8, 0.8, 0.8, 1),
+"size": AABB(-8, -8, -8, 8, 8, 8)
+}
+node_class = ""
+name_property = ""
+metadata/_custom_type_script = "uid://c4xc207ilaefw"

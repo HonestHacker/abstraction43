@@ -12,7 +12,7 @@ config_version=5
 
 config/name="Abstraction First Connection"
 run/main_scene="uid://bo4tp400tvd16"
-config/features=PackedStringArray("4.4", "Forward Plus")
+config/features=PackedStringArray("4.4", "C#", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
@@ -32,7 +32,7 @@ project/assembly_name="Abstraction-main"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/func-godot-lightpass/plugin.cfg", "res://addons/func_godot/plugin.cfg", "res://addons/panku_console/plugin.cfg")
+enabled=PackedStringArray("res://addons/GodoTeX/plugin.cfg", "res://addons/func-godot-lightpass/plugin.cfg", "res://addons/func_godot/plugin.cfg", "res://addons/panku_console/plugin.cfg")
 
 [file_customization]
 
