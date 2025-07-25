@@ -7,6 +7,7 @@ const FORMULA = preload("res://scenes/entities/temp_fx_formula.tscn")
 @export var targetname : String
 @export var target : String
 @export var interval : float
+@export var dispersion : float = 0.2
 @export var func_godot_properties: Dictionary :
 	set(value):
 		func_godot_properties = value
@@ -14,7 +15,7 @@ const FORMULA = preload("res://scenes/entities/temp_fx_formula.tscn")
 			return
 		targetname = func_godot_properties['targetname']
 		target = func_godot_properties['target']
-		interval = func_godot_properties['interval']
+		interval = float(func_godot_properties['interval'])
 	get:
 		return func_godot_properties
 
@@ -31,9 +32,10 @@ func _process(delta: float) -> void:
 	timer += delta
 	if timer > interval and activated:
 		var formula := FORMULA.instantiate()
-		formula.rotation = rotation
+		# HACK: I hate angles
+		formula.rotation.y = PI
 		add_child(formula)
-		timer = -10000000
+		timer = randf_range(-dispersion/2, dispersion/2)
 
 func use(_activator: Node) -> void:
 	activated = not activated
