@@ -7,6 +7,7 @@ signal load_game_pressed(filename: String)
 @export var main_menu_background : TextureRect
 @export var pause_menu_background : ColorRect
 @export var load_game_window : Window
+@export var settings_window : Window
 
 @onready var is_pause_menu := false :
 	set(value):
@@ -23,6 +24,7 @@ signal load_game_pressed(filename: String)
 		get_tree().paused = is_paused
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE if is_paused else Input.MOUSE_MODE_CAPTURED
 		load_game_window.hide()
+		settings_window.hide()
 
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("ui_open_menu") and is_pause_menu:
@@ -30,6 +32,7 @@ func _process(delta: float) -> void:
 
 func _on_new_game_started() -> void:
 	load_game_window.hide()
+	settings_window.hide()
 
 func _on_new_game_pressed() -> void:
 	new_game_started.emit()
@@ -41,17 +44,14 @@ func _on_quit_pressed() -> void:
 	get_tree().quit()
 
 func _on_settings_pressed() -> void:
-	$ButtonContainer.hide()
-	$settings_window.visible = true
-	$settings_window.tree_exited.connect(_on_settings_closed)
+	settings_window.visible = true
+	settings_window.tree_exited.connect(_on_settings_closed)
 
 func _on_settings_closed() -> void:
-	$ButtonContainer.show()
-	$"settings_window".visible = false
+	settings_window.visible = false
 
 func _on_settings_window_close_requested() -> void:
-	$"settings_window".visible = false
-	$"ButtonContainer".visible = true
+	settings_window.visible = false
 
 func _on_save_game_pressed() -> void:
 	SaveloadManager.save("%s.sav" % Time.get_datetime_string_from_system().validate_filename())

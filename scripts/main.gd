@@ -1,6 +1,8 @@
 extends Node
 
 
+signal game_loaded
+
 @export var main_menu : Control
 @export_file("*.tscn") var map_scene : String
 
@@ -19,6 +21,7 @@ func _process(delta: float) -> void:
 		add_child(map_node)
 		main_menu.is_pause_menu = true
 		main_menu.visible = false
+		game_loaded.emit()
 		if savefile:
 			SaveloadManager.restore(savefile)
 

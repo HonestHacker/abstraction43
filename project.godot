@@ -23,7 +23,6 @@ Panku="*res://addons/panku_console/console.tscn"
 
 [display]
 
-window/size/mode=3
 window/vsync/vsync_mode=0
 
 [dotnet]
@@ -32,7 +31,7 @@ project/assembly_name="Abstraction-main"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/GodoTeX/plugin.cfg", "res://addons/func-godot-lightpass/plugin.cfg", "res://addons/func_godot/plugin.cfg", "res://addons/panku_console/plugin.cfg")
+enabled=PackedStringArray("res://addons/func-godot-lightpass/plugin.cfg", "res://addons/func_godot/plugin.cfg", "res://addons/panku_console/plugin.cfg")
 
 [file_customization]
 
