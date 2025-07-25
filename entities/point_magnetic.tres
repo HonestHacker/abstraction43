@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="FuncGodotFGDPointClass" load_steps=4 format=3 uid="uid://bjhq0durn5gcd"]
+
+[ext_resource type="Resource" uid="uid://dnjwu7nudj2iu" path="res://entities/base/io.tres" id="1_ce7ie"]
+[ext_resource type="Script" uid="uid://c4xc207ilaefw" path="res://addons/func_godot/src/fgd/func_godot_fgd_point_class.gd" id="1_gfn4f"]
+[ext_resource type="Script" uid="uid://c1g4gwhei54yy" path="res://scripts/entities/points/point_magnetic.gd" id="3_sdqia"]
+
+[resource]
+script = ExtResource("1_gfn4f")
+script_class = ExtResource("3_sdqia")
+apply_rotation_on_map_build = true
+classname = "point_magnetic"
+description = "The entity attracts the player, when activated."
+func_godot_internal = false
+base_classes = Array[Resource]([ExtResource("1_ce7ie")])
+class_properties = {
+"force": 10.0
+}
+class_property_descriptions = {
+"force": "The force of the attraction"
+}
+meta_properties = {
+"color": Color(0.8, 0.8, 0.8, 1),
+"size": AABB(-16, -16, -36, 16, 16, 36)
+}
+node_class = ""
+name_property = ""
+metadata/_custom_type_script = "uid://c4xc207ilaefw"
