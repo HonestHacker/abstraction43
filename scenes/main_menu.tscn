@@ -8,7 +8,7 @@
 [ext_resource type="Script" uid="uid://bacvexd2s45ag" path="res://scripts/ui/loading_progress_window.gd" id="6_rtw2f"]
 [ext_resource type="Script" uid="uid://dxibu0cfviydf" path="res://scripts/ui/settings.gd" id="7_oa1go"]
 
-[node name="main_menu" type="Control" node_paths=PackedStringArray("main_menu_background", "pause_menu_background", "load_game_window")]
+[node name="main_menu" type="Control" node_paths=PackedStringArray("main_menu_background", "pause_menu_background", "load_game_window", "settings_window")]
 process_mode = 3
 layout_mode = 3
 anchors_preset = 15
@@ -20,6 +20,7 @@ script = ExtResource("1_wu84c")
 main_menu_background = NodePath("MainMenuBackground")
 pause_menu_background = NodePath("PauseMenuBackground")
 load_game_window = NodePath("LoadGameWindow")
+settings_window = NodePath("SettingsWindow")
 
 [node name="MainMenuBackground" type="TextureRect" parent="."]
 layout_mode = 1
@@ -127,15 +128,18 @@ grow_horizontal = 2
 grow_vertical = 2
 rounded = true
 
-[node name="SettingsWindow" type="Window" parent="." node_paths=PackedStringArray("fov_slider", "sensitivity_slider")]
+[node name="SettingsWindow" type="Window" parent="." node_paths=PackedStringArray("resolution", "fov_slider", "sensitivity_slider", "audio_volume", "fullscreen_toggle")]
 title = "Settings"
 initial_position = 2
 size = Vector2i(500, 275)
 visible = false
 theme = ExtResource("3_wu84c")
 script = ExtResource("7_oa1go")
+resolution = NodePath("VBoxContainer/Resolution")
 fov_slider = NodePath("VBoxContainer/FOV")
 sensitivity_slider = NodePath("VBoxContainer/Sensitivity")
+audio_volume = NodePath("VBoxContainer/Volume")
+fullscreen_toggle = NodePath("VBoxContainer/Fullscreen")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="SettingsWindow"]
 anchors_preset = 15
@@ -152,6 +156,11 @@ text = "Resolution:"
 [node name="Resolution" type="OptionButton" parent="SettingsWindow/VBoxContainer"]
 layout_mode = 2
 
+[node name="Fullscreen" type="CheckButton" parent="SettingsWindow/VBoxContainer"]
+layout_mode = 2
+button_pressed = true
+text = "Fullscreen"
+
 [node name="Label2" type="Label" parent="SettingsWindow/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
@@ -159,6 +168,8 @@ text = "FOV:"
 
 [node name="FOV" type="HSlider" parent="SettingsWindow/VBoxContainer"]
 layout_mode = 2
+min_value = 70.0
+value = 75.0
 
 [node name="Label3" type="Label" parent="SettingsWindow/VBoxContainer"]
 layout_mode = 2
@@ -167,6 +178,10 @@ text = "Sensitivity:"
 
 [node name="Sensitivity" type="HSlider" parent="SettingsWindow/VBoxContainer"]
 layout_mode = 2
+min_value = 0.01
+max_value = 0.3
+step = 0.01
+value = 0.1
 
 [node name="Label4" type="Label" parent="SettingsWindow/VBoxContainer"]
 layout_mode = 2
@@ -189,5 +204,4 @@ text = "Back"
 [connection signal="about_to_popup" from="LoadGameWindow" to="LoadGameWindow" method="_on_about_to_popup"]
 [connection signal="item_activated" from="LoadGameWindow/Saves" to="LoadGameWindow" method="_on_saves_item_activated"]
 [connection signal="close_requested" from="SettingsWindow" to="." method="_on_settings_window_close_requested"]
-[connection signal="changed" from="SettingsWindow/VBoxContainer/Sensitivity" to="SettingsWindow" method="_on_Sensitivity_changed"]
 [connection signal="pressed" from="SettingsWindow/VBoxContainer/BackButton" to="." method="_on_settings_closed"]
