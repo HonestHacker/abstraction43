@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Sentence" load_steps=3 format=3 uid="uid://wcuopi6v621l"]
+
+[ext_resource type="AudioStream" uid="uid://cw2e7gpmafds0" path="res://sounds/narrator/19 (Okay, I get it)/A1.wav" id="1_0ewjv"]
+[ext_resource type="Script" uid="uid://dpytbhschjcpe" path="res://scripts/narrative/sentence.gd" id="2_6cdj5"]
+
+[resource]
+script = ExtResource("2_6cdj5")
+audio_stream = ExtResource("1_0ewjv")
+subtitles = "Okay, I get it. I underestimated you. Could you try like, a little less hard on the next challenge? You're going to make me look really bad in front of the scientists."
+metadata/_custom_type_script = "uid://dpytbhschjcpe"

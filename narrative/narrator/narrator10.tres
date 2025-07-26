@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Sentence" load_steps=3 format=3 uid="uid://c7jfidmt7jef3"]
+
+[ext_resource type="AudioStream" uid="uid://so6wvopo1wwk" path="res://sounds/narrator/11 (Try moving forward)/A1.wav" id="1_yj8gb"]
+[ext_resource type="Script" uid="uid://dpytbhschjcpe" path="res://scripts/narrative/sentence.gd" id="2_kems2"]
+
+[resource]
+script = ExtResource("2_kems2")
+audio_stream = ExtResource("1_yj8gb")
+subtitles = "Try moving forward as you activate the Dash ability."
+metadata/_custom_type_script = "uid://dpytbhschjcpe"

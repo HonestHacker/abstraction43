@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="FuncGodotFGDPointClass" load_steps=4 format=3 uid="uid://db65qb565s4bt"]
+
+[ext_resource type="Script" uid="uid://c4xc207ilaefw" path="res://addons/func_godot/src/fgd/func_godot_fgd_point_class.gd" id="1_bad6u"]
+[ext_resource type="Resource" uid="uid://dnjwu7nudj2iu" path="res://entities/base/io.tres" id="1_orr23"]
+[ext_resource type="Script" uid="uid://be42w730csiaj" path="res://scripts/entities/fx/sfx_music.gd" id="3_f6trf"]
+
+[resource]
+script = ExtResource("1_bad6u")
+script_class = ExtResource("3_f6trf")
+apply_rotation_on_map_build = true
+classname = "sfx_music"
+description = "Music"
+func_godot_internal = false
+base_classes = Array[Resource]([ExtResource("1_orr23")])
+class_properties = {
+"path": ""
+}
+class_property_descriptions = {
+"path": "The path to the audio file"
+}
+meta_properties = {
+"color": Color(0.8, 0.8, 0.8, 1),
+"size": AABB(-8, -8, -8, 8, 8, 8)
+}
+node_class = "AudioStreamPlayer"
+name_property = ""
+metadata/_custom_type_script = "uid://c4xc207ilaefw"

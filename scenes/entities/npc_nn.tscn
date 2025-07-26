@@ -114,5 +114,6 @@ libraries = {
 shape = SubResource("CapsuleShape3D_52o63")
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+bus = &"NN"
 
 [editable path="Model"]

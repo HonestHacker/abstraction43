@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Sentence" load_steps=3 format=3 uid="uid://cyw0w3cgmfalp"]
+
+[ext_resource type="AudioStream" uid="uid://bqox5srnusrly" path="res://sounds/narrator/10 (Loading human pun.)/A1.wav" id="1_41hsm"]
+[ext_resource type="Script" uid="uid://dpytbhschjcpe" path="res://scripts/narrative/sentence.gd" id="2_t7ajm"]
+
+[resource]
+script = ExtResource("2_t7ajm")
+audio_stream = ExtResource("1_41hsm")
+subtitles = "Loading human pun. Isn't that just \"the pits?\" Cue laughter."
+metadata/_custom_type_script = "uid://dpytbhschjcpe"

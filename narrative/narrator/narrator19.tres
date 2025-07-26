@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Sentence" load_steps=3 format=3 uid="uid://c4q2b4gv2hvpu"]
+
+[ext_resource type="AudioStream" uid="uid://dc8x17buq48g1" path="res://sounds/narrator/22 (Anomaly detected nearby)/A1.wav" id="1_53ohg"]
+[ext_resource type="Script" uid="uid://dpytbhschjcpe" path="res://scripts/narrative/sentence.gd" id="2_pie2c"]
+
+[resource]
+script = ExtResource("2_pie2c")
+audio_stream = ExtResource("1_53ohg")
+subtitles = "Anomaly detected nearby. Don't go through any doors unless I tell you to. If you do, I'll be mad. You don't want to make me mad, do you?"
+metadata/_custom_type_script = "uid://dpytbhschjcpe"

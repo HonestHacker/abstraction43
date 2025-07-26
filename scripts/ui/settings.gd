@@ -13,7 +13,7 @@ func _ready():
 	ProjectSettings.set_setting("display/window/stretch/aspect", "ignore")
 	get_tree().root.content_scale_mode = Window.CONTENT_SCALE_MODE_CANVAS_ITEMS
 	get_tree().root.content_scale_aspect = Window.CONTENT_SCALE_ASPECT_IGNORE
-	get_tree().root.content_scale_size = get_window().size
+	#get_tree().root.content_scale_size = get_window().size
 
 	_populate_resolutions()
 	resolution.item_selected.connect(_on_resolution_selected)
@@ -55,8 +55,6 @@ func _on_resolution_selected(index: int):
 	get_window().size = selected_res
 	DisplayServer.window_set_size(selected_res)
 	resolution.set_item_text(index, resolution.get_item_text(index).replace(" (Current)", ""))
-	resolution.set_item_text(resolution.get_item_count() - 1, "%d x %d (Current)" % [selected_res.x, selected_res.y])
-	resolution.select(resolution.get_item_count() - 1)
 	save_settings()
 
 func _on_fullscreen_toggled(button_pressed: bool):

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Sentence" load_steps=3 format=3 uid="uid://bumuu0n7xgaxn"]
+
+[ext_resource type="AudioStream" uid="uid://qs1oj06r6tqn" path="res://sounds/narrator/12 (I wonder what your personality was like)/A1.wav" id="1_cmu3t"]
+[ext_resource type="Script" uid="uid://dpytbhschjcpe" path="res://scripts/narrative/sentence.gd" id="2_qid5r"]
+
+[resource]
+script = ExtResource("2_qid5r")
+audio_stream = ExtResource("1_cmu3t")
+subtitles = "I wonder what your personality was like when you could still talk? Wait - I'm a computer. I can just check. (pause) \"Entirely unremarkable.\" That's… the only sentence in your file."
+metadata/_custom_type_script = "uid://dpytbhschjcpe"

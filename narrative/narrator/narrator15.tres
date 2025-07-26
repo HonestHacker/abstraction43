@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Sentence" load_steps=3 format=3 uid="uid://dfqws425sqxud"]
+
+[ext_resource type="AudioStream" uid="uid://b8efxtbrv5uma" path="res://sounds/narrator/15 (Usually,)/A1.wav" id="1_53gvh"]
+[ext_resource type="Script" uid="uid://dpytbhschjcpe" path="res://scripts/narrative/sentence.gd" id="2_tw7ls"]
+
+[resource]
+script = ExtResource("2_tw7ls")
+audio_stream = ExtResource("1_53gvh")
+subtitles = "Usually, I love getting to know people through their testing environments, watching their memories turn distorted and sour. I don't even know what this is. Did you grow up in a warehouse? Or an unfinished building?"
+metadata/_custom_type_script = "uid://dpytbhschjcpe"

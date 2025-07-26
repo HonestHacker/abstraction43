@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Sentence" load_steps=3 format=3 uid="uid://b6jodelljts6y"]
+
+[ext_resource type="AudioStream" uid="uid://1n2l2o4esdnn" path="res://sounds/narrator/8 (Obtained Super Jump)/A1.wav" id="1_6pjts"]
+[ext_resource type="Script" uid="uid://dpytbhschjcpe" path="res://scripts/narrative/sentence.gd" id="2_1iiwk"]
+
+[resource]
+script = ExtResource("2_1iiwk")
+audio_stream = ExtResource("1_6pjts")
+subtitles = "Obtained Super Jump. It makes your jump… super."
+metadata/_custom_type_script = "uid://dpytbhschjcpe"

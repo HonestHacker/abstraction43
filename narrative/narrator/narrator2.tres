@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Sentence" load_steps=3 format=3 uid="uid://esl1fn075t6t"]
+
+[ext_resource type="AudioStream" uid="uid://3pkvckvs3xxb" path="res://sounds/narrator/2 (Transfer Complete)/A1.wav" id="1_b0duw"]
+[ext_resource type="Script" uid="uid://dpytbhschjcpe" path="res://scripts/narrative/sentence.gd" id="2_swh3v"]
+
+[resource]
+script = ExtResource("2_swh3v")
+audio_stream = ExtResource("1_b0duw")
+subtitles = "Transfer complete. Commence testing for Subject 4513."
+metadata/_custom_type_script = "uid://dpytbhschjcpe"

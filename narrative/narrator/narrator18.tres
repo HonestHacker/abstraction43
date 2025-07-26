@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Sentence" load_steps=3 format=3 uid="uid://v2o0f415q7a5"]
+
+[ext_resource type="AudioStream" uid="uid://lw281yfw6h5v" path="res://sounds/narrator/21 (Obtained Invert Gravity)/A1.wav" id="1_g3gq5"]
+[ext_resource type="Script" uid="uid://dpytbhschjcpe" path="res://scripts/narrative/sentence.gd" id="2_pbx6j"]
+
+[resource]
+script = ExtResource("2_pbx6j")
+audio_stream = ExtResource("1_g3gq5")
+subtitles = "Obtained Invert Gravity. Can you guess what this does? If you guessed \"cure my online shopping addiction,\" that's - very incorrect. Activate Invert Gravity to walk on the ceiling. Inverting gravity will also effect loose objects."
+metadata/_custom_type_script = "uid://dpytbhschjcpe"

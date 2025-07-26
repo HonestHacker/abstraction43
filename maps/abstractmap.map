@@ -43,12 +43,12 @@
 }
 // brush 4
 {
-( -128 -64 176 ) ( -128 -63 176 ) ( -128 -64 177 ) dev/Dark/texture_08 [ 0 -1 0 512 ] [ 0 0 -1 -768 ] 0 0.0625 0.0625
-( -112 -256 176 ) ( -112 -256 177 ) ( -111 -256 176 ) dev/Dark/texture_08 [ 1 0 0 512 ] [ 0 0 -1 -768 ] 0 0.0625 0.0625
-( -112 -64 176 ) ( -111 -64 176 ) ( -112 -63 176 ) dev/Dark/texture_08 [ -1 0 0 512 ] [ 0 -1 0 512 ] 0 0.0625 0.0625
-( 32 48 192 ) ( 32 49 192 ) ( 33 48 192 ) dev/Dark/texture_08 [ 1 0 0 512 ] [ 0 -1 0 512 ] 0 0.0625 0.0625
-( 32 256 192 ) ( 33 256 192 ) ( 32 256 193 ) dev/Dark/texture_08 [ -1 0 0 512 ] [ 0 0 -1 -768 ] 0 0.0625 0.0625
-( 128 48 192 ) ( 128 48 193 ) ( 128 49 192 ) dev/Dark/texture_08 [ 0 1 0 512 ] [ 0 0 -1 -768 ] 0 0.0625 0.0625
+( -128 -64 176 ) ( -128 -63 176 ) ( -128 -64 177 ) office_ceiling01/OfficeCeiling001_1K-JPG_AmbientOcclusion [ 0 -1 0 512 ] [ 0 0 -1 -768 ] 0 0.25 0.25
+( -112 -256 176 ) ( -112 -256 177 ) ( -111 -256 176 ) office_ceiling01/OfficeCeiling001_1K-JPG_AmbientOcclusion [ 1 0 0 512 ] [ 0 0 -1 -768 ] 0 0.25 0.25
+( -112 -64 176 ) ( -111 -64 176 ) ( -112 -63 176 ) office_ceiling01/OfficeCeiling001_1K-JPG_AmbientOcclusion [ -1 0 0 512 ] [ 0 -1 0 512 ] 0 0.25 0.25
+( 32 48 192 ) ( 32 49 192 ) ( 33 48 192 ) office_ceiling01/OfficeCeiling001_1K-JPG_AmbientOcclusion [ 1 0 0 512 ] [ 0 -1 0 512 ] 0 0.25 0.25
+( 32 256 192 ) ( 33 256 192 ) ( 32 256 193 ) office_ceiling01/OfficeCeiling001_1K-JPG_AmbientOcclusion [ -1 0 0 512 ] [ 0 0 -1 -768 ] 0 0.25 0.25
+( 128 48 192 ) ( 128 48 193 ) ( 128 49 192 ) office_ceiling01/OfficeCeiling001_1K-JPG_AmbientOcclusion [ 0 1 0 512 ] [ 0 0 -1 -768 ] 0 0.25 0.25
 }
 // brush 5
 {
@@ -491,20 +491,20 @@
 }
 // brush 54
 {
-( 144 -336 -176 ) ( 144 -320 -176 ) ( 144 -336 16 ) painted010/PaintedPlaster010_1K-JPG_AmbientOcclusion [ 0 -1 0 512 ] [ 0 0 -1 512 ] 0 0.0625 0.0625
-( 144 -336 16 ) ( 152 -336 16 ) ( 144 -336 -176 ) painted010/PaintedPlaster010_1K-JPG_AmbientOcclusion [ 1 0 0 640 ] [ 0 0 -1 768 ] 0 0.0625 0.0625
-( 144 -336 -176 ) ( 152 -336 -176 ) ( 144 -320 -176 ) painted010/PaintedPlaster010_1K-JPG_AmbientOcclusion [ -1 0 0 384 ] [ 0 -1 0 0 ] 0 0.0625 0.0625
-( 144 -320 16 ) ( 152 -320 16 ) ( 144 -336 16 ) painted010/PaintedPlaster010_1K-JPG_AmbientOcclusion [ -1 0 0 512 ] [ 0 -1 0 512 ] 0 0.0625 0.0625
-( 144 -320 -176 ) ( 152 -320 -176 ) ( 144 -320 16 ) painted010/PaintedPlaster010_1K-JPG_AmbientOcclusion [ -1 0 0 384 ] [ 0 0 -1 768 ] 0 0.0625 0.0625
-( 152 -336 -176 ) ( 152 -336 16 ) ( 152 -320 -176 ) painted010/PaintedPlaster010_1K-JPG_AmbientOcclusion [ 0 -1 0 768 ] [ 0 0 -1 768 ] 0 0.0625 0.0625
+( 144 -336 -176 ) ( 144 -320 -176 ) ( 144 -336 16 ) plaster001/Plaster001_1K-JPG_Color [ 0 -1 0 512 ] [ 0 0 -1 512 ] 0 0.0625 0.0625
+( 144 -336 16 ) ( 152 -336 16 ) ( 144 -336 -176 ) plaster001/Plaster001_1K-JPG_Color [ 1 0 0 640 ] [ 0 0 -1 768 ] 0 0.0625 0.0625
+( 144 -336 -176 ) ( 152 -336 -176 ) ( 144 -320 -176 ) plaster001/Plaster001_1K-JPG_Color [ -1 0 0 384 ] [ 0 -1 0 0 ] 0 0.0625 0.0625
+( 144 -320 16 ) ( 152 -320 16 ) ( 144 -336 16 ) plaster001/Plaster001_1K-JPG_Color [ -1 0 0 512 ] [ 0 -1 0 512 ] 0 0.0625 0.0625
+( 144 -320 -176 ) ( 152 -320 -176 ) ( 144 -320 16 ) plaster001/Plaster001_1K-JPG_Color [ -1 0 0 384 ] [ 0 0 -1 768 ] 0 0.0625 0.0625
+( 152 -336 -176 ) ( 152 -336 16 ) ( 152 -320 -176 ) plaster001/Plaster001_1K-JPG_Color [ 0 -1 0 768 ] [ 0 0 -1 768 ] 0 0.0625 0.0625
 }
 // brush 55
 {
 ( 152 -336 16 ) ( 152 -336 -80 ) ( 152 -320 16 ) tiles01/Tiles001_1K-JPG_Color [ 0 -1 0 768 ] [ 0 0 -1 768 ] 0 0.0625 0.0625
-( 200 -336 16 ) ( 200 -336 -80 ) ( 152 -336 16 ) tiles01/Tiles001_1K-JPG_Color [ 1 0 0 640 ] [ 0 0 -1 768 ] 0 0.0625 0.0625
-( 200 -336 -80 ) ( 200 -320 -80 ) ( 152 -336 -80 ) tiles01/Tiles001_1K-JPG_Color [ 1 0 0 640 ] [ 0 -1 0 0 ] 0 0.0625 0.0625
+( 200 -336 16 ) ( 200 -336 -80 ) ( 152 -336 16 ) plaster001/Plaster001_1K-JPG_Color [ 1 0 0 640 ] [ 0 0 -1 768 ] 0 0.0625 0.0625
+( 200 -336 -80 ) ( 200 -320 -80 ) ( 152 -336 -80 ) plaster001/Plaster001_1K-JPG_Color [ 1 0 0 640 ] [ 0 -1 0 0 ] 0 0.0625 0.0625
 ( 200 -336 16 ) ( 152 -336 16 ) ( 200 -320 16 ) tiles01/Tiles001_1K-JPG_Color [ -1 0 0 358 ] [ 0 -1 0 523 ] 0 0.0625 0.0625
-( 152 -320 16 ) ( 152 -320 -80 ) ( 200 -320 16 ) tiles01/Tiles001_1K-JPG_Color [ -1 0 0 384 ] [ 0 0 -1 768 ] 0 0.0625 0.0625
+( 152 -320 16 ) ( 152 -320 -80 ) ( 200 -320 16 ) plaster001/Plaster001_1K-JPG_Color [ -1 0 0 384 ] [ 0 0 -1 768 ] 0 0.0625 0.0625
 ( 200 -320 16 ) ( 200 -320 -80 ) ( 200 -336 16 ) tiles01/Tiles001_1K-JPG_Color [ 0 1 0 256 ] [ 0 0 -1 768 ] 0 0.0625 0.0625
 }
 // brush 56
@@ -3785,7 +3785,7 @@
 "classname" "logic_limiter"
 "origin" "800 -312 -88"
 "targetname" "elevator01_limiter01"
-"target" "elevator01"
+"target" "elevator01,sentence_narrator6"
 }
 // entity 12
 {
@@ -3836,7 +3836,7 @@
 "classname" "logic_limiter"
 "origin" "728 -392 -536"
 "targetname" "elevator01_limiter04"
-"target" "elevator01,hint2,autosave1"
+"target" "elevator01,hint2,autosave1,sentence_narrator7,music_void"
 }
 // entity 18
 {
@@ -3873,17 +3873,17 @@
 // entity 22
 {
 "classname" "item_action_superjump"
-"origin" "1181 -461 -563"
+"origin" "1153 -211 -563"
 }
 // entity 23
 {
 "classname" "item_action_superjump"
-"origin" "1139 -819 -163"
+"origin" "1123 -211 -563"
 }
 // entity 24
 {
 "classname" "item_action_superjump"
-"origin" "1123 -611 -355"
+"origin" "1183 -211 -563"
 }
 // entity 25
 {
@@ -3909,12 +3909,12 @@
 // entity 27
 {
 "classname" "item_action_dash"
-"origin" "1123 -1139 29"
+"origin" "1123 -1195 53"
 }
 // entity 28
 {
 "classname" "item_action_dash"
-"origin" "1549 -1155 29"
+"origin" "1157 -1195 53"
 }
 // entity 29
 {
@@ -4024,7 +4024,7 @@
 // entity 44
 {
 "classname" "trigger_area"
-"target" "kill_player"
+"target" "kill_player,sentence_narrator10"
 // brush 0
 {
 ( 1248 -1152 -16 ) ( 1248 -1056 -64 ) ( 1248 -1056 -16 ) special/nodraw [ 0 -1 0 -464 ] [ 0 0 -1 512 ] 90 1 1
@@ -4038,7 +4038,7 @@
 // entity 45
 {
 "classname" "trigger_area"
-"target" "kill_player"
+"target" "kill_player,sentence_narrator11"
 // brush 0
 {
 ( 1616 -1152 0 ) ( 1616 -1056 -48 ) ( 1616 -1056 0 ) special/nodraw [ 0 -1 0 -464 ] [ 0 0 -1 528 ] 0 1 1
@@ -5055,7 +5055,7 @@
 {
 "classname" "logic_limiter"
 "origin" "-1400 1720 56"
-"target" "train,train_timer1"
+"target" "train,train_timer1,sentence_narrator1"
 "targetname" "train_limiter1"
 }
 // entity 96
@@ -5063,7 +5063,7 @@
 "classname" "logic_timer"
 "origin" "-1400 1672 56"
 "targetname" "train_timer1"
-"target" "train,train_timer2"
+"target" "train,train_timer2,sentence_narrator2"
 "time" "14.25"
 }
 // entity 97
@@ -6264,7 +6264,8 @@
 "classname" "logic_limiter"
 "origin" "440 312 104"
 "targetname" "narrator1_limiter1"
-"target" "hint1"
+"target" "hint1,sentence_narrator3,music_office"
+"limit" "1"
 }
 // entity 155
 {
@@ -6298,7 +6299,7 @@
 {
 "classname" "trigger_tutorial_hint"
 "origin" "1016 -248 -536"
-"hint" "[p]LEFT MOUSE BUTTON - PERFORM AN OVERSPRUNG[/p]"
+"hint" "[p]LEFT MOUSE BUTTON - PERFORM AN SUPERJUMP[/p]"
 "target" ""
 "targetname" "hint3"
 }
@@ -6560,7 +6561,7 @@
 "classname" "logic_limiter"
 "origin" "2040 -1064 168"
 "targetname" "chamber4_limiter1"
-"target" "autosave"
+"target" "autosave,sentence_narrator12"
 }
 // entity 181
 {
@@ -6581,7 +6582,7 @@
 "classname" "logic_limiter"
 "origin" "1960 -1320 776"
 "targetname" "chamber5_limiter1"
-"target" "autosave"
+"target" "autosave,sentence_narrator13"
 }
 // entity 183
 {
@@ -6602,7 +6603,7 @@
 "classname" "logic_limiter"
 "origin" "1960 -1576 776"
 "targetname" "chamber6_limiter1"
-"target" "autosave"
+"target" "autosave,sentence_narrator15"
 }
 // entity 185
 {
@@ -6623,7 +6624,7 @@
 "classname" "logic_limiter"
 "origin" "2120 -1880 984"
 "targetname" "chamber7_limiter1"
-"target" "autosave"
+"target" "autosave,sentence_narrator16"
 }
 // entity 187
 {
@@ -6644,7 +6645,7 @@
 "classname" "logic_limiter"
 "origin" "2120 -2728 536"
 "targetname" "corridor78_limiter1"
-"target" "autosave"
+"target" "autosave,sentence_narrator17"
 }
 // entity 189
 {
@@ -6686,7 +6687,7 @@
 "classname" "logic_limiter"
 "origin" "2696 -4344 1112"
 "targetname" "chamber9_limiter1"
-"target" "autosave"
+"target" "autosave,sentence_narrator19"
 }
 // entity 193
 {
@@ -6730,7 +6731,7 @@
 {
 "classname" "logic_limiter"
 "origin" "2568 -4200 1464"
-"target" "door09_exit,final_timer1,door_final"
+"target" "door09_exit,final_timer1,door_final,sentence_narrator20"
 "targetname" "final_limiter1"
 }
 // entity 198
@@ -6753,6 +6754,7 @@
 "origin" "2568 -4152 1464"
 "target" "final_magnet"
 "targetname" "final_timer1"
+"time" "3"
 }
 // entity 200
 {
@@ -6782,7 +6784,7 @@
 "actorname" "nn_final"
 "sentence" "res://narrative/nn/nn_final.tres"
 "targetname" "nn_sentence_final"
-"target" ""
+"target" "credits"
 }
 // entity 203
 {
@@ -6848,4 +6850,342 @@
 "target" ""
 "animation" "idle02"
 "movement_type" "0"
+}
+// entity 210
+{
+"classname" "npc_narrator"
+"origin" "-1280 1616 -28"
+"targetname" "narrator"
+}
+// entity 211
+{
+"classname" "scripted_sentence"
+"origin" "-1280 1696 -28"
+"sentence" "res://narrative/narrator/narrator1.tres"
+"actorname" "narrator"
+"targetname" "sentence_narrator1"
+}
+// entity 212
+{
+"classname" "scripted_sentence"
+"origin" "-1216 1696 -28"
+"sentence" "res://narrative/narrator/narrator2.tres"
+"actorname" "narrator"
+"targetname" "sentence_narrator2"
+}
+// entity 213
+{
+"classname" "scripted_sentence"
+"origin" "448 208 52"
+"sentence" "res://narrative/narrator/narrator3.tres"
+"actorname" "narrator"
+"targetname" "sentence_narrator3"
+}
+// entity 214
+{
+"classname" "trigger_area"
+"target" "narrator4_limiter1"
+// brush 0
+{
+( 144 -352 16 ) ( 144 -351 16 ) ( 144 -352 17 ) special/trigger [ 0 -1 0 512 ] [ 0 0 -1 0 ] 180 0.0625 0.0625
+( 144 -352 16 ) ( 144 -352 17 ) ( 145 -352 16 ) special/trigger [ 1 0 0 -512 ] [ 0 0 -1 0 ] 180 0.0625 0.0625
+( 144 -352 16 ) ( 145 -352 16 ) ( 144 -351 16 ) special/trigger [ -1 0 0 512 ] [ 0 -1 0 512 ] 180 0.0625 0.0625
+( 320 -336 112 ) ( 320 -335 112 ) ( 321 -336 112 ) special/trigger [ 1 0 0 -512 ] [ 0 -1 0 512 ] 90 0.0625 0.0625
+( 320 -336 32 ) ( 321 -336 32 ) ( 320 -336 33 ) special/trigger [ -1 0 0 512 ] [ 0 0 -1 0 ] 180 0.0625 0.0625
+( 240 -336 32 ) ( 240 -336 33 ) ( 240 -335 32 ) special/trigger [ 0 1 0 -512 ] [ 0 0 -1 0 ] 90 0.0625 0.0625
+}
+}
+// entity 215
+{
+"classname" "logic_limiter"
+"origin" "344 -360 104"
+"targetname" "narrator4_limiter1"
+"target" "sentence_narrator4"
+"limit" "1"
+}
+// entity 216
+{
+"classname" "scripted_sentence"
+"origin" "160 -512 52"
+"sentence" "res://narrative/narrator/narrator4.tres"
+"actorname" "narrator"
+"targetname" "sentence_narrator4"
+}
+// entity 217
+{
+"classname" "trigger_area"
+"target" "narrator5_limiter1"
+// brush 0
+{
+( 144 -320 -176 ) ( 144 -319 -176 ) ( 144 -320 -175 ) special/trigger [ 0 -1 0 0 ] [ 0 0 -1 0 ] 270 0.0625 0.0625
+( 144 -320 -176 ) ( 144 -320 -175 ) ( 145 -320 -176 ) special/trigger [ 1 0 0 512 ] [ 0 0 -1 0 ] 270 0.0625 0.0625
+( 144 -320 -176 ) ( 145 -320 -176 ) ( 144 -319 -176 ) special/trigger [ -1 0 0 -512 ] [ 0 -1 0 0 ] 270 0.0625 0.0625
+( 320 -304 -80 ) ( 320 -303 -80 ) ( 321 -304 -80 ) special/trigger [ 1 0 0 512 ] [ 0 -1 0 0 ] 180 0.0625 0.0625
+( 320 -304 -160 ) ( 321 -304 -160 ) ( 320 -304 -159 ) special/trigger [ -1 0 0 -512 ] [ 0 0 -1 0 ] 270 0.0625 0.0625
+( 240 -304 -160 ) ( 240 -304 -159 ) ( 240 -303 -160 ) special/trigger [ 0 1 0 0 ] [ 0 0 -1 0 ] 180 0.0625 0.0625
+}
+}
+// entity 218
+{
+"classname" "scripted_sentence"
+"origin" "176 -64 -140"
+"sentence" "res://narrative/narrator/narrator5.tres"
+"actorname" "narrator"
+"targetname" "sentence_narrator5"
+}
+// entity 219
+{
+"classname" "logic_limiter"
+"origin" "360 -216 -88"
+"targetname" "narrator5_limiter1"
+"target" "sentence_narrator5"
+"limit" "1"
+}
+// entity 220
+{
+"classname" "scripted_sentence"
+"origin" "960 -384 -140"
+"sentence" "res://narrative/narrator/narrator6.tres"
+"actorname" "narrator"
+"targetname" "sentence_narrator6"
+}
+// entity 221
+{
+"classname" "scripted_sentence"
+"origin" "944 -512 -572"
+"sentence" "res://narrative/narrator/narrator7.tres"
+"actorname" "narrator"
+"targetname" "sentence_narrator7"
+}
+// entity 222
+{
+"classname" "scripted_sentence"
+"origin" "1200 -416 -572"
+"sentence" "res://narrative/narrator/narrator8.tres"
+"actorname" "narrator"
+"targetname" "sentence_narrator8"
+}
+// entity 223
+{
+"classname" "trigger_area"
+"target" "narrator8_limiter1"
+// brush 0
+{
+( 1104 -240 -608 ) ( 1104 -239 -608 ) ( 1104 -240 -607 ) special/trigger [ 0 -1 0 0 ] [ 0 0 -1 0 ] 270 1 1
+( 1088 -224 -608 ) ( 1088 -224 -607 ) ( 1089 -224 -608 ) special/trigger [ 1 0 0 0 ] [ 0 0 -1 0 ] 270 1 1
+( 1088 -240 -576 ) ( 1089 -240 -576 ) ( 1088 -239 -576 ) special/trigger [ -1 0 0 0 ] [ 0 -1 0 0 ] 270 1 1
+( 1216 -192 -552 ) ( 1216 -191 -552 ) ( 1217 -192 -552 ) special/trigger [ 1 0 0 0 ] [ 0 -1 0 0 ] 180 1 1
+( 1216 -192 -592 ) ( 1217 -192 -592 ) ( 1216 -192 -591 ) special/trigger [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 1200 -192 -592 ) ( 1200 -192 -591 ) ( 1200 -191 -592 ) special/trigger [ 0 1 0 0 ] [ 0 0 -1 0 ] 270 1 1
+}
+}
+// entity 224
+{
+"classname" "logic_limiter"
+"origin" "1224 -240 -544"
+"target" "sentence_narrator8"
+"targetname" "narrator8_limiter1"
+}
+// entity 225
+{
+"classname" "trigger_area"
+"target" "narrator9_limiter1"
+// brush 0
+{
+( 1104 -1224 16 ) ( 1104 -1223 16 ) ( 1104 -1224 17 ) special/trigger [ 0 -1 0 40 ] [ 0 0 -1 624 ] 180 1 1
+( 1088 -1208 16 ) ( 1088 -1208 17 ) ( 1089 -1208 16 ) special/trigger [ 1 0 0 0 ] [ 0 0 -1 624 ] 180 1 1
+( 1088 -1224 48 ) ( 1089 -1224 48 ) ( 1088 -1223 48 ) special/trigger [ -1 0 0 0 ] [ 0 -1 0 40 ] 180 1 1
+( 1216 -1176 72 ) ( 1216 -1175 72 ) ( 1217 -1176 72 ) special/trigger [ 1 0 0 0 ] [ 0 -1 0 40 ] 90 1 1
+( 1216 -1176 32 ) ( 1217 -1176 32 ) ( 1216 -1176 33 ) special/trigger [ -1 0 0 0 ] [ 0 0 -1 624 ] 270 1 1
+( 1184 -1176 32 ) ( 1184 -1176 33 ) ( 1184 -1175 32 ) special/trigger [ 0 1 0 -40 ] [ 0 0 -1 624 ] 90 1 1
+}
+}
+// entity 226
+{
+"classname" "logic_limiter"
+"origin" "1224 -1224 80"
+"target" "sentence_narrator9"
+"targetname" "narrator9_limiter1"
+}
+// entity 227
+{
+"classname" "scripted_sentence"
+"origin" "1032 -1248 52"
+"sentence" "res://narrative/narrator/narrator9.tres"
+"actorname" "narrator"
+"targetname" "sentence_narrator9"
+}
+// entity 228
+{
+"classname" "scripted_sentence"
+"origin" "1480 -1248 52"
+"sentence" "res://narrative/narrator/narrator10.tres"
+"actorname" "narrator"
+"targetname" "sentence_narrator10"
+}
+// entity 229
+{
+"classname" "scripted_sentence"
+"origin" "1848 -1248 52"
+"sentence" "res://narrative/narrator/narrator11.tres"
+"actorname" "narrator"
+"targetname" "sentence_narrator11"
+}
+// entity 230
+{
+"classname" "scripted_sentence"
+"origin" "2072 -1232 52"
+"sentence" "res://narrative/narrator/narrator12.tres"
+"actorname" "narrator"
+"targetname" "sentence_narrator12"
+}
+// entity 231
+{
+"classname" "scripted_sentence"
+"origin" "2112 -1504 660"
+"sentence" "res://narrative/narrator/narrator13.tres"
+"actorname" "narrator"
+"targetname" "sentence_narrator13"
+}
+// entity 232
+{
+"classname" "trigger_area"
+"target" "narrator14_limiter1"
+// brush 0
+{
+( 1320 -1464 648 ) ( 1320 -1463 648 ) ( 1320 -1464 649 ) special/trigger [ 0 -1 0 -200 ] [ 0 0 -1 232 ] 180 1 1
+( 1288 -1440 648 ) ( 1288 -1440 649 ) ( 1289 -1440 648 ) special/trigger [ 1 0 0 -200 ] [ 0 0 -1 232 ] 270 1 1
+( 1288 -1464 680 ) ( 1289 -1464 680 ) ( 1288 -1463 680 ) special/trigger [ -1 0 0 200 ] [ 0 -1 0 -200 ] 0 1 1
+( 1416 -1416 704 ) ( 1416 -1415 704 ) ( 1417 -1416 704 ) special/trigger [ 1 0 0 -200 ] [ 0 -1 0 -200 ] 270 1 1
+( 1416 -1416 664 ) ( 1417 -1416 664 ) ( 1416 -1416 665 ) special/trigger [ -1 0 0 200 ] [ 0 0 -1 232 ] 90 1 1
+( 1344 -1416 664 ) ( 1344 -1416 665 ) ( 1344 -1415 664 ) special/trigger [ 0 1 0 200 ] [ 0 0 -1 232 ] 180 1 1
+}
+}
+// entity 233
+{
+"classname" "logic_limiter"
+"origin" "1424 -1464 712"
+"target" "sentence_narrator14,hint5"
+"targetname" "narrator14_limiter1"
+}
+// entity 234
+{
+"classname" "scripted_sentence"
+"origin" "1264 -1488 652"
+"sentence" "res://narrative/narrator/narrator14.tres"
+"actorname" "narrator"
+"targetname" "sentence_narrator14"
+}
+// entity 235
+{
+"classname" "trigger_tutorial_hint"
+"origin" "1352 -1544 728"
+"hint" "[p]LEFT MOUSE BUTTON - PERFORM A MATERIALIZATION[/p]"
+"targetname" "hint5"
+}
+// entity 236
+{
+"classname" "scripted_sentence"
+"origin" "2144 -1584 660"
+"sentence" "res://narrative/narrator/narrator15.tres"
+"actorname" "narrator"
+"targetname" "sentence_narrator15"
+}
+// entity 237
+{
+"classname" "scripted_sentence"
+"origin" "2288 -1936 900"
+"sentence" "res://narrative/narrator/narrator16.tres"
+"actorname" "narrator"
+"targetname" "sentence_narrator16"
+}
+// entity 238
+{
+"classname" "scripted_sentence"
+"origin" "2112 -3104 452"
+"sentence" "res://narrative/narrator/narrator17.tres"
+"actorname" "narrator"
+"targetname" "sentence_narrator17"
+}
+// entity 239
+{
+"classname" "trigger_area"
+"target" "narrator18_limiter1"
+"targetname" ""
+// brush 0
+{
+( 2712 -3536 1008 ) ( 2712 -3535 1008 ) ( 2712 -3536 1009 ) special/trigger [ 0 -1 0 -224 ] [ 0 0 -1 592 ] 0 1 1
+( 2680 -3520 1008 ) ( 2680 -3520 1009 ) ( 2681 -3520 1008 ) special/trigger [ 1 0 0 -568 ] [ 0 0 -1 592 ] 0 1 1
+( 2680 -3536 1040 ) ( 2681 -3536 1040 ) ( 2680 -3535 1040 ) special/trigger [ -1 0 0 568 ] [ 0 -1 0 -224 ] 180 1 1
+( 2808 -3488 1064 ) ( 2808 -3487 1064 ) ( 2809 -3488 1064 ) special/trigger [ 1 0 0 -568 ] [ 0 -1 0 -224 ] 90 1 1
+( 2808 -3488 1024 ) ( 2809 -3488 1024 ) ( 2808 -3488 1025 ) special/trigger [ -1 0 0 568 ] [ 0 0 -1 592 ] 270 1 1
+( 2792 -3488 1024 ) ( 2792 -3488 1025 ) ( 2792 -3487 1024 ) special/trigger [ 0 1 0 224 ] [ 0 0 -1 592 ] 180 1 1
+}
+}
+// entity 240
+{
+"classname" "logic_limiter"
+"origin" "2816 -3560 1088"
+"target" "sentence_narrator18,hint6"
+"targetname" "narrator18_limiter1"
+}
+// entity 241
+{
+"classname" "trigger_tutorial_hint"
+"origin" "2744 -3640 1104"
+"hint" "[p]LEFT MOUSE BUTTON - PERFORM A GRAVITY INVERSION[/p]"
+"targetname" "hint6"
+}
+// entity 242
+{
+"classname" "scripted_sentence"
+"origin" "2656 -3584 1028"
+"sentence" "res://narrative/narrator/narrator18.tres"
+"actorname" "narrator"
+"targetname" "sentence_narrator18"
+}
+// entity 243
+{
+"classname" "scripted_sentence"
+"origin" "2752 -4408 1028"
+"sentence" "res://narrative/narrator/narrator19.tres"
+"actorname" "narrator"
+"targetname" "sentence_narrator19"
+}
+// entity 244
+{
+"classname" "scripted_sentence"
+"origin" "2568 -4352 1412"
+"sentence" "res://narrative/narrator/narrator20.tres"
+"actorname" "narrator"
+"targetname" "sentence_narrator20"
+}
+// entity 245
+{
+"classname" "sfx_music"
+"origin" "488 280 144"
+"targetname" "music_office"
+"path" "res://sounds/ost/office.mp3"
+}
+// entity 246
+{
+"classname" "sfx_music"
+"origin" "856 -552 -528"
+"targetname" "music_void"
+"path" "res://sounds/ost/void.wav"
+}
+// entity 247
+{
+"classname" "fgl_decal"
+"origin" "2511.55859375 -3473.60424804688 1056.0"
+"angles" "-90.0 -270.0 0.0"
+"_godot_to_quake_uuid" "2821169304"
+"size" "1.0 1.0 1.29999995231628"
+"texture_albedo" "Texture::CompressedTexture2D::res://textures/posters/poster1.png"
+}
+// entity 248
+{
+"classname" "ui_credits"
+"origin" "2568 -3272 1464"
+"targetname" "credits"
 }

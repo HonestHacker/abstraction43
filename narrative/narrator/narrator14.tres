@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Sentence" load_steps=3 format=3 uid="uid://c0f325p5fbdip"]
+
+[ext_resource type="AudioStream" uid="uid://btlvgmjjey63q" path="res://sounds/narrator/14 (Obtained Cube)/A1.wav" id="1_cmu3t"]
+[ext_resource type="Script" uid="uid://dpytbhschjcpe" path="res://scripts/narrative/sentence.gd" id="2_qid5r"]
+
+[resource]
+script = ExtResource("2_qid5r")
+audio_stream = ExtResource("1_cmu3t")
+subtitles = "Obtained Cube, which uh, makes cubes."
+metadata/_custom_type_script = "uid://dpytbhschjcpe"
