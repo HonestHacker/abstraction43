@@ -90,17 +90,7 @@ func play_sequence(sequence_name: String, animation: String, target_position: Ve
 			sequence_finished.emit(current_sequence_name)
 
 func play_sentence(sentence_name: String, sentence: Sentence) -> void:
-	current_sentence_name = sentence_name
-	if audio_stream_player:
-		# Stop any currently playing audio
-		audio_stream_player.stop()
-		
-		# Configure and play new audio
-		audio_stream_player.stream = sentence.audio_stream
-		audio_stream_player.play()
-		var subtitles = get_tree().get_first_node_in_group("subtitles")
-		if subtitles:
-			subtitles.show_text(sentence.subtitles, sentence.audio_stream.get_length() + 5.0)
+	sentence.play(self, sentence_name)
 
 func _physics_process(delta: float) -> void:
 	if rotating_to_target:

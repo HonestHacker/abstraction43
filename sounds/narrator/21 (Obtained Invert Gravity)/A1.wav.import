@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://lw281yfw6h5v"
+path="res://.godot/imported/A1.wav-c93c867fb777e38a63397e053f788044.sample"
+
+[deps]
+
+source_file="res://sounds/narrator/21 (Obtained Invert Gravity)/A1.wav"
+dest_files=["res://.godot/imported/A1.wav-c93c867fb777e38a63397e053f788044.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

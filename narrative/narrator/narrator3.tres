@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Sentence" load_steps=3 format=3 uid="uid://d0usrb6nv1x1d"]
+
+[ext_resource type="AudioStream" uid="uid://p51tttpbegos" path="res://sounds/narrator/3 (First test,)/A1.wav" id="1_lt2dj"]
+[ext_resource type="Script" uid="uid://dpytbhschjcpe" path="res://scripts/narrative/sentence.gd" id="2_171sj"]
+
+[resource]
+script = ExtResource("2_171sj")
+audio_stream = ExtResource("1_lt2dj")
+subtitles = "First test, and it's a doozy: open doors."
+metadata/_custom_type_script = "uid://dpytbhschjcpe"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Sentence" load_steps=3 format=3 uid="uid://c8rqberp1xfia"]
+
+[ext_resource type="AudioStream" uid="uid://b8b4a5omqcj1k" path="res://sounds/narrator/17 (I'm required by law)/A1.wav" id="1_15765"]
+[ext_resource type="Script" uid="uid://dpytbhschjcpe" path="res://scripts/narrative/sentence.gd" id="2_wh84b"]
+
+[resource]
+script = ExtResource("2_wh84b")
+audio_stream = ExtResource("1_15765")
+subtitles = "I'm required by law to inform you that - while you're usually beholden to the laws of physics in the Abstract System - you won't take fall damage."
+metadata/_custom_type_script = "uid://dpytbhschjcpe"

@@ -8,6 +8,7 @@ signal load_game_pressed(filename: String)
 @export var pause_menu_background : ColorRect
 @export var load_game_window : Window
 @export var settings_window : Window
+@export var music : AudioStreamPlayer
 
 @onready var is_pause_menu := false :
 	set(value):
@@ -25,6 +26,7 @@ signal load_game_pressed(filename: String)
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE if is_paused else Input.MOUSE_MODE_CAPTURED
 		load_game_window.hide()
 		settings_window.hide()
+		music.stop()
 
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("ui_open_menu") and is_pause_menu:
@@ -33,9 +35,7 @@ func _process(delta: float) -> void:
 func _on_new_game_started() -> void:
 	load_game_window.hide()
 	settings_window.hide()
-
-func _on_new_game_pressed() -> void:
-	new_game_started.emit()
+	music.stop()
 
 func _on_load_game_pressed() -> void:
 	load_game_window.popup_centered()
@@ -55,3 +55,12 @@ func _on_settings_window_close_requested() -> void:
 
 func _on_save_game_pressed() -> void:
 	SaveloadManager.save("%s.sav" % Time.get_datetime_string_from_system().validate_filename())
+
+func _on_load_game(filename: String) -> void:
+	load_game_window.hide()
+	settings_window.hide()
+	music.stop()
+
+
+func _on_new_game_pressed() -> void:
+	new_game_started.emit()

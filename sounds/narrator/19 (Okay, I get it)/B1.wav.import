@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cgqsxjsncqgsl"
+path="res://.godot/imported/B1.wav-4b41300dca749ccae46946a6ea2921ed.sample"
+
+[deps]
+
+source_file="res://sounds/narrator/19 (Okay, I get it)/B1.wav"
+dest_files=["res://.godot/imported/B1.wav-4b41300dca749ccae46946a6ea2921ed.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

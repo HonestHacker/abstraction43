@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://cgcm434dd0bh5"]
+[gd_scene load_steps=9 format=3 uid="uid://cgcm434dd0bh5"]
 
 [ext_resource type="Texture2D" uid="uid://ky7kg4dssf3l" path="res://textures/ui/main_menu/background1.png" id="1_l6cm7"]
 [ext_resource type="Script" uid="uid://p74yhdak6ec2" path="res://scripts/ui/main_menu.gd" id="1_wu84c"]
@@ -7,8 +7,9 @@
 [ext_resource type="Script" uid="uid://cdr8trfg7hoxv" path="res://scripts/ui/load_game_window.gd" id="5_8ln24"]
 [ext_resource type="Script" uid="uid://bacvexd2s45ag" path="res://scripts/ui/loading_progress_window.gd" id="6_rtw2f"]
 [ext_resource type="Script" uid="uid://dxibu0cfviydf" path="res://scripts/ui/settings.gd" id="7_oa1go"]
+[ext_resource type="AudioStream" uid="uid://dfge2intsi45l" path="res://sounds/ost/strange_home.wav" id="8_tbmy8"]
 
-[node name="main_menu" type="Control" node_paths=PackedStringArray("main_menu_background", "pause_menu_background", "load_game_window", "settings_window")]
+[node name="main_menu" type="Control" node_paths=PackedStringArray("main_menu_background", "pause_menu_background", "load_game_window", "settings_window", "music")]
 process_mode = 3
 layout_mode = 3
 anchors_preset = 15
@@ -21,6 +22,7 @@ main_menu_background = NodePath("MainMenuBackground")
 pause_menu_background = NodePath("PauseMenuBackground")
 load_game_window = NodePath("LoadGameWindow")
 settings_window = NodePath("SettingsWindow")
+music = NodePath("Music")
 
 [node name="MainMenuBackground" type="TextureRect" parent="."]
 layout_mode = 1
@@ -195,6 +197,11 @@ layout_mode = 2
 layout_mode = 2
 text = "Back"
 
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_tbmy8")
+autoplay = true
+
+[connection signal="load_game_pressed" from="." to="." method="_on_load_game"]
 [connection signal="new_game_started" from="." to="." method="_on_new_game_started"]
 [connection signal="pressed" from="ButtonContainer/NewGame" to="." method="_on_new_game_pressed"]
 [connection signal="pressed" from="ButtonContainer/SaveGame" to="." method="_on_save_game_pressed"]

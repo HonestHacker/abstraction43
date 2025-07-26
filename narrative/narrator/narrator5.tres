@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Sentence" load_steps=3 format=3 uid="uid://db2dhtp6l6c1a"]
+
+[ext_resource type="AudioStream" uid="uid://ca13n34h7jhc3" path="res://sounds/narrator/5 (Checking the waiting list...)/A1.wav" id="1_qrdk8"]
+[ext_resource type="Script" uid="uid://dpytbhschjcpe" path="res://scripts/narrative/sentence.gd" id="2_1qet4"]
+
+[resource]
+script = ExtResource("2_1qet4")
+audio_stream = ExtResource("1_qrdk8")
+subtitles = "Checking the waiting list for Abstract System subjects. Oh - there are none."
+metadata/_custom_type_script = "uid://dpytbhschjcpe"

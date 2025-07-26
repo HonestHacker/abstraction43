@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Sentence" load_steps=3 format=3 uid="uid://bb5jeqaorutq2"]
+
+[ext_resource type="AudioStream" uid="uid://ch535001nwow7" path="res://sounds/narrator/9 (Obtained Dash)/A1.wav" id="1_retlh"]
+[ext_resource type="Script" uid="uid://dpytbhschjcpe" path="res://scripts/narrative/sentence.gd" id="2_f36tx"]
+
+[resource]
+script = ExtResource("2_f36tx")
+audio_stream = ExtResource("1_retlh")
+subtitles = "Obtained Dash. Makes you zoom forward."
+metadata/_custom_type_script = "uid://dpytbhschjcpe"

@@ -13,16 +13,18 @@ config_version=5
 config/name="Abstraction First Connection"
 run/main_scene="uid://bo4tp400tvd16"
 config/features=PackedStringArray("4.4", "C#", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="uid://b7sugx55u3kah"
 
 [autoload]
 
 GameManager="*res://scripts/singletons/game_manager.gd"
 SaveloadManager="*res://scripts/singletons/saveload_manager.gd"
-Panku="*res://addons/panku_console/console.tscn"
 
 [display]
 
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/mode=3
 window/vsync/vsync_mode=0
 
 [dotnet]
@@ -31,7 +33,7 @@ project/assembly_name="Abstraction-main"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/func-godot-lightpass/plugin.cfg", "res://addons/func_godot/plugin.cfg", "res://addons/panku_console/plugin.cfg")
+enabled=PackedStringArray("res://addons/func-godot-lightpass/plugin.cfg", "res://addons/func_godot/plugin.cfg")
 
 [file_customization]
 

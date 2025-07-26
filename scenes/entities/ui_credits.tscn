@@ -1,0 +1,56 @@
+[gd_scene load_steps=2 format=3 uid="uid://b77p2tafm76ax"]
+
+[ext_resource type="Script" uid="uid://dn5i03cjdmhdp" path="res://scripts/entities/ui/ui_credits.gd" id="1_52o2o"]
+
+[node name="UiCredits" type="Control" node_paths=PackedStringArray("text")]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_52o2o")
+names = Array[String](["[b]Voice actor[/b]
+BurkeZerk", "[b]Programmer[/b]
+justblack", "[b]Team Leader[/b]
+Kuznetsov Makar (HonestHacker)", "[b]3D Artist[/b]
+Kuznetsov Miron (ARbuzik)", "[b]Concept Artist[/b]
+luda", "[b]Composer[/b]
+MrAiros2004", "[b]Narrative Designer[/b]
+Thomas Gumbel (gumbelmachine)", "[b]Thanks for playtesting and development support![/b]
+[img width=500]res://textures/ui/credits/tmoeg.png[/img]", "[img width=500]res://textures/ui/credits/godot_logo.png[/img]", "[font=res://fonts/CALDERIOUS.ttf]Abstraction:
+						First Connection[/font]"])
+text = NodePath("Text")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Text" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_font_sizes/bold_italics_font_size = 32
+theme_override_font_sizes/italics_font_size = 32
+theme_override_font_sizes/mono_font_size = 32
+theme_override_font_sizes/normal_font_size = 32
+theme_override_font_sizes/bold_font_size = 32
+bbcode_enabled = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]

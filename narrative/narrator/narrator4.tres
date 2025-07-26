@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Sentence" load_steps=3 format=3 uid="uid://d2qynsy8i5hed"]
+
+[ext_resource type="AudioStream" uid="uid://dx0oxg1e77r4l" path="res://sounds/narrator/4 (Wow, you did it.)/A1.wav" id="1_2tvyc"]
+[ext_resource type="Script" uid="uid://dpytbhschjcpe" path="res://scripts/narrative/sentence.gd" id="2_b3qft"]
+
+[resource]
+script = ExtResource("2_b3qft")
+audio_stream = ExtResource("1_2tvyc")
+subtitles = "Wow, you did it. Cue applause."
+metadata/_custom_type_script = "uid://dpytbhschjcpe"

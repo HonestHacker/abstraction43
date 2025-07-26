@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Sentence" load_steps=3 format=3 uid="uid://cbqbj3islpbyi"]
+
+[ext_resource type="AudioStream" uid="uid://4xpc5pbokvy0" path="res://sounds/narrator/1 (Welcome to...)/A1.wav" id="1_j7ptf"]
+[ext_resource type="Script" uid="uid://dpytbhschjcpe" path="res://scripts/narrative/sentence.gd" id="2_fi0fj"]
+
+[resource]
+script = ExtResource("2_fi0fj")
+audio_stream = ExtResource("1_j7ptf")
+subtitles = "Welcome to the Gestalt Engineering Abstract System. We hope you enjoy your extensive stay."
+metadata/_custom_type_script = "uid://dpytbhschjcpe"

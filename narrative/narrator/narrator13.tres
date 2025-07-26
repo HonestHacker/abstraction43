@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Sentence" load_steps=3 format=3 uid="uid://bqjoj4f0c5eww"]
+
+[ext_resource type="AudioStream" uid="uid://crwqcp0k30tsh" path="res://sounds/narrator/13 (Powerups will form a queue)/A1.wav" id="1_elm6a"]
+[ext_resource type="Script" uid="uid://dpytbhschjcpe" path="res://scripts/narrative/sentence.gd" id="2_e2d2k"]
+
+[resource]
+script = ExtResource("2_e2d2k")
+audio_stream = ExtResource("1_elm6a")
+subtitles = "Powerups will form a queue, executing in the same order you obtain them."
+metadata/_custom_type_script = "uid://dpytbhschjcpe"

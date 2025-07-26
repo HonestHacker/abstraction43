@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Sentence" load_steps=3 format=3 uid="uid://ckaxcuyiluybr"]
+
+[ext_resource type="AudioStream" uid="uid://bbj3fne3321gr" path="res://sounds/narrator/7 (Another riveting puzzle.)/A1.wav" id="1_661ai"]
+[ext_resource type="Script" uid="uid://dpytbhschjcpe" path="res://scripts/narrative/sentence.gd" id="2_gb3e2"]
+
+[resource]
+script = ExtResource("2_gb3e2")
+audio_stream = ExtResource("1_661ai")
+subtitles = "Another riveting puzzle. Good luck."
+metadata/_custom_type_script = "uid://dpytbhschjcpe"

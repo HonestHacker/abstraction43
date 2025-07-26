@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Sentence" load_steps=3 format=3 uid="uid://y2keylo5f2tc"]
+
+[ext_resource type="AudioStream" uid="uid://cwkc7r8vwxqaq" path="res://sounds/narrator/23 (No!)/A1.wav" id="1_6w3ig"]
+[ext_resource type="Script" uid="uid://dpytbhschjcpe" path="res://scripts/narrative/sentence.gd" id="2_y4chf"]
+
+[resource]
+script = ExtResource("2_y4chf")
+audio_stream = ExtResource("1_6w3ig")
+subtitles = "No! Get back here! We have more tests for you! So much more testing!"
+metadata/_custom_type_script = "uid://dpytbhschjcpe"

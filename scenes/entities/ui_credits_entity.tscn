@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://cxoqr678nkwlv"]
+
+[ext_resource type="PackedScene" uid="uid://b77p2tafm76ax" path="res://scenes/entities/ui_credits.tscn" id="1_1e616"]
+[ext_resource type="Script" uid="uid://caoyvobdrukv8" path="res://scripts/entities/ui/ui_credits_entity.gd" id="1_3qior"]
+
+[node name="UiCreditsEntity" type="Node3D"]
+script = ExtResource("1_3qior")
+
+[node name="UiCredits" parent="." instance=ExtResource("1_1e616")]

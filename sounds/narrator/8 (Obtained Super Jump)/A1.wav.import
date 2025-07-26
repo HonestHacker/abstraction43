@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://1n2l2o4esdnn"
+path="res://.godot/imported/A1.wav-9445ba0e9270d75c44dc2d5c7a7c9084.sample"
+
+[deps]
+
+source_file="res://sounds/narrator/8 (Obtained Super Jump)/A1.wav"
+dest_files=["res://.godot/imported/A1.wav-9445ba0e9270d75c44dc2d5c7a7c9084.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
